@@ -5,7 +5,7 @@ Resource   ../Pages/LoginPage.robot
 
 *** Keywords ***
 Open Browser To Application
-    Open Browser    ${BASE_URL}    ${BROWSER}
+    Open Browser    ${LOGIN_URL}   ${BROWSER}
     Maximize Browser Window
 
 Login With Credentials

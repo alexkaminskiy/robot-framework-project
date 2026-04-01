@@ -9,5 +9,5 @@ Library     SeleniumLibrary
 Valid Login
     Open Browser To Application
     Login With Credentials    ${VALID_USER}    ${VALID_PASS}
-    Page Should Contain    Employee List
+    Page Should Contain    Employee Management
     Close Browser

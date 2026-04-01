@@ -6,3 +6,6 @@ poetry.lock
 .vscode/
 drivers/
 .venv/
+report.html
+output.xml
+log.html

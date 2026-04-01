@@ -1,7 +1,9 @@
 
 *** Variables ***
-${BASE_URL}     http://eaapp.somee.com/
+${BASE_URL}     http://eaapp.somee.com
+${LOGIN_URL}    ${BASE_URL}/Account/Login
 ${BROWSER}      chrome
+
 
 # For EAAPP login UI
 ${VALID_USER}   admin

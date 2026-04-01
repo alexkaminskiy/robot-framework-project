@@ -6,8 +6,8 @@ Library    ../../libraries/CustomAPI.py
 API Login
     [Arguments]    ${user}    ${password}
     ${result}=    Login    ${user}    ${password}
-    [Return]    ${result}
+    RETURN    ${result}
 
 API Get Auth
     ${result}=    GetAuth
-    [Return]    ${result}
+    RETURN    ${result}
