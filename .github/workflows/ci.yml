@@ -10,7 +10,7 @@ on:
     branches: [ main ]
 
 jobs:
-  api-automation-tests:
+  robot-automation-tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -44,7 +44,7 @@ jobs:
   # Prepare Robot Framework report for GitHub Pages
     - name: Prepare Robot Report for GitHub Pages
       run: |
-          cp reports/report.html reports/index.html
+          cp tests/reports/report.html tests/reports/index.html
 
     - name: Deploy Robot Framework Report to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
