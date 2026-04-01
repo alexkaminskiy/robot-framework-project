@@ -41,6 +41,11 @@ jobs:
           -v ${{ github.workspace }}/reports:/tests/reports \
           api-tests ./run.sh
     
+    - name: Deploy Allure Report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: tests 
 
     # - name: Send Teams Notification
       # if: always()   
