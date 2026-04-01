@@ -1,8 +1,0 @@
-__pycache__/
-*.pyc
-.robotcache/
-poetry.lock
-.idea/
-.vscode/
-drivers/
-.venv/
