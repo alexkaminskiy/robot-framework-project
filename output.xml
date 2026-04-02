@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T09:45:51.258499" rpa="false" schemaversion="5">
+<suite id="s1" name="Api" source="/tests/tests/api">
+<suite id="s1-s1" name="User Api Tests" source="/tests/tests/api/user_api_tests.robot">
+<test id="s1-s1-t1" name="Login API" line="8">
+<kw name="API Login" owner="api_keywords">
+<kw name="Login" owner="CustomAPI">
+<msg time="2026-04-02T09:45:52.012636" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzAzNTEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.oSUACu7FbuRXzbxyZKSP0GSySf6pLn3ow1R9yRC_...</msg>
+<var>${result}</var>
+<arg>${user}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-04-02T09:45:51.659333" elapsed="0.353385"/>
+</kw>
+<return>
+<value>${result}</value>
+<status status="PASS" start="2026-04-02T09:45:52.012822" elapsed="0.000056"/>
+</return>
+<msg time="2026-04-02T09:45:52.013037" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzAzNTEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.oSUACu7FbuRXzbxyZKSP0GSySf6pLn3ow1R9yRC_...</msg>
+<var>${token}</var>
+<arg>${VALID_USER}</arg>
+<arg>${VALID_PASS}</arg>
+<status status="PASS" start="2026-04-02T09:45:51.658633" elapsed="0.354429"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-04-02T09:45:52.013705" level="INFO">Length is 2.</msg>
+<arg>${token}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-04-02T09:45:52.013196" elapsed="0.000554"/>
+</kw>
+<status status="PASS" start="2026-04-02T09:45:51.657788" elapsed="0.356072"/>
+</test>
+<test id="s1-s1-t2" name="Get Authenticate List" line="12">
+<kw name="API Get Auth" owner="api_keywords">
+<kw name="Get Auth" owner="CustomAPI">
+<msg time="2026-04-02T09:45:52.519088" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzAzNTIsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.8w6tY1GIR9jPZi3JOBM-dkU7JTC8g6YHPpIYNGmQzls']</msg>
+<var>${result}</var>
+<status status="PASS" start="2026-04-02T09:45:52.014795" elapsed="0.504346"/>
+</kw>
+<return>
+<value>${result}</value>
+<status status="PASS" start="2026-04-02T09:45:52.519220" elapsed="0.000060"/>
+</return>
+<msg time="2026-04-02T09:45:52.519440" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzAzNTIsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.8w6tY1GIR9jPZi3JOBM-dkU7JTC8g6YHPpIYNGmQzls']</msg>
+<var>${list}</var>
+<status status="PASS" start="2026-04-02T09:45:52.014566" elapsed="0.504896"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-04-02T09:45:52.519937" level="INFO">Length is 1.</msg>
+<arg>${list}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-04-02T09:45:52.519607" elapsed="0.000370"/>
+</kw>
+<status status="PASS" start="2026-04-02T09:45:52.014077" elapsed="0.506003"/>
+</test>
+<status status="PASS" start="2026-04-02T09:45:51.320257" elapsed="1.200272"/>
+</suite>
+<status status="PASS" start="2026-04-02T09:45:51.261745" elapsed="1.259415"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Api" id="s1" pass="2" fail="0" skip="0">Api</stat>
+<stat name="User Api Tests" id="s1-s1" pass="2" fail="0" skip="0">Api.User Api Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
