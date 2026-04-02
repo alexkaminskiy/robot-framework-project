@@ -44,15 +44,13 @@ jobs:
   # Prepare Robot Framework report for GitHub Pages
     - name: Prepare Robot Report for GitHub Pages
       run: |
-          ls reports
-          ls tests
-          cp tests/report.html tests/index.html
+          cp reports/report.html reports/index.html
 
     - name: Deploy Robot Framework Report to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: tests/index.html
+          publish_dir: reports
 
     # - name: Send Teams Notification
       # if: always()   
