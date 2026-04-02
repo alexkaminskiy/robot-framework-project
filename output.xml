@@ -1,241 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T11:50:22.059978" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T11:57:50.288071" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/tests/tests">
 <suite id="s1-s1" name="Api" source="/tests/tests/api">
 <suite id="s1-s1-s1" name="User Api Tests" source="/tests/tests/api/user_api_tests.robot">
 <test id="s1-s1-s1-t1" name="Login API" line="8">
 <kw name="API Login" owner="api_keywords">
 <kw name="Login" owner="CustomAPI">
-<msg time="2026-04-02T11:50:25.723756" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzc4MjUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.O_b5p6AI0q8uezA6593zpPVNww8VcRQm3xOUia4s...</msg>
+<msg time="2026-04-02T11:57:51.216328" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzgyNzEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.2juPoE4ZDG3YHpmug2YplEFJdq0UL_iSWjBlav13...</msg>
 <var>${result}</var>
 <arg>${user}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-04-02T11:50:25.330097" elapsed="0.393723"/>
+<status status="PASS" start="2026-04-02T11:57:50.802080" elapsed="0.414314"/>
 </kw>
 <return>
 <value>${result}</value>
-<status status="PASS" start="2026-04-02T11:50:25.723913" elapsed="0.000061"/>
+<status status="PASS" start="2026-04-02T11:57:51.216493" elapsed="0.000067"/>
 </return>
-<msg time="2026-04-02T11:50:25.724170" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzc4MjUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.O_b5p6AI0q8uezA6593zpPVNww8VcRQm3xOUia4s...</msg>
+<msg time="2026-04-02T11:57:51.216725" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzgyNzEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.2juPoE4ZDG3YHpmug2YplEFJdq0UL_iSWjBlav13...</msg>
 <var>${token}</var>
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="PASS" start="2026-04-02T11:50:25.329388" elapsed="0.394806"/>
+<status status="PASS" start="2026-04-02T11:57:50.801365" elapsed="0.415384"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T11:50:25.724817" level="INFO">Length is 2.</msg>
+<msg time="2026-04-02T11:57:51.217412" level="INFO">Length is 2.</msg>
 <arg>${token}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T11:50:25.724331" elapsed="0.000525"/>
+<status status="PASS" start="2026-04-02T11:57:51.216928" elapsed="0.000527"/>
 </kw>
-<status status="PASS" start="2026-04-02T11:50:25.328597" elapsed="0.396366"/>
+<status status="PASS" start="2026-04-02T11:57:50.800497" elapsed="0.417071"/>
 </test>
 <test id="s1-s1-s1-t2" name="Get Authenticate List" line="12">
 <kw name="API Get Auth" owner="api_keywords">
 <kw name="Get Auth" owner="CustomAPI">
-<msg time="2026-04-02T11:50:26.146226" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzc4MjUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.O_b5p6AI0q8uezA6593zpPVNww8VcRQm3xOUia4sYd0']</msg>
+<msg time="2026-04-02T11:57:51.525329" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzgyNzEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.2juPoE4ZDG3YHpmug2YplEFJdq0UL_iSWjBlav13tdA']</msg>
 <var>${result}</var>
-<status status="PASS" start="2026-04-02T11:50:25.725849" elapsed="0.420425"/>
+<status status="PASS" start="2026-04-02T11:57:51.218517" elapsed="0.306860"/>
 </kw>
 <return>
 <value>${result}</value>
-<status status="PASS" start="2026-04-02T11:50:26.146347" elapsed="0.000059"/>
+<status status="PASS" start="2026-04-02T11:57:51.525455" elapsed="0.000060"/>
 </return>
-<msg time="2026-04-02T11:50:26.146544" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzc4MjUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.O_b5p6AI0q8uezA6593zpPVNww8VcRQm3xOUia4sYd0']</msg>
+<msg time="2026-04-02T11:57:51.525678" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzgyNzEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.2juPoE4ZDG3YHpmug2YplEFJdq0UL_iSWjBlav13tdA']</msg>
 <var>${list}</var>
-<status status="PASS" start="2026-04-02T11:50:25.725659" elapsed="0.420903"/>
+<status status="PASS" start="2026-04-02T11:57:51.218306" elapsed="0.307399"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T11:50:26.147001" level="INFO">Length is 1.</msg>
+<msg time="2026-04-02T11:57:51.526249" level="INFO">Length is 1.</msg>
 <arg>${list}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T11:50:26.146681" elapsed="0.000380"/>
+<status status="PASS" start="2026-04-02T11:57:51.525874" elapsed="0.000418"/>
 </kw>
-<status status="PASS" start="2026-04-02T11:50:25.725195" elapsed="0.421973"/>
+<status status="PASS" start="2026-04-02T11:57:51.217793" elapsed="0.308609"/>
 </test>
-<status status="PASS" start="2026-04-02T11:50:22.113624" elapsed="4.033966"/>
+<status status="PASS" start="2026-04-02T11:57:50.344100" elapsed="1.182798"/>
 </suite>
-<status status="PASS" start="2026-04-02T11:50:22.112749" elapsed="4.035364"/>
+<status status="PASS" start="2026-04-02T11:57:50.343053" elapsed="1.184497"/>
 </suite>
 <suite id="s1-s2" name="Ui" source="/tests/tests/ui">
 <suite id="s1-s2-s1" name="Dashboard Tests" source="/tests/tests/ui/dashboard_tests.robot">
-<test id="s1-s2-s1-t1" name="Open Dashboard" line="9">
+<test id="s1-s2-s1-t1" name="Open Dashboard" line="10">
 <kw name="Open Browser To Application" owner="ui_keywords">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-04-02T11:50:26.397211" level="FAIL">Evaluating expression 'from selenium.webdriver import ChromeOptions;' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</msg>
+<kw name="Chrome Ci Options" owner="browser_options">
+<msg time="2026-04-02T11:57:51.781479" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fe80e5dc0e0&gt;</msg>
 <var>${options}</var>
-<arg>from selenium.webdriver import ChromeOptions;</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="FAIL" start="2026-04-02T11:50:26.396807" elapsed="0.000578">Evaluating expression 'from selenium.webdriver import ChromeOptions;' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
-</kw>
-<kw name="o=ChromeOptions(); o">
-<arg>selenium.webdriver</arg>
-<status status="NOT RUN" start="2026-04-02T11:50:26.397563" elapsed="0.000027"/>
-</kw>
-<kw name="Call Method" owner="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--headless=new</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.397673" elapsed="0.000021"/>
-</kw>
-<kw name="Call Method" owner="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--no-sandbox</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.397764" elapsed="0.000018"/>
-</kw>
-<kw name="Call Method" owner="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--disable-dev-shm-usage</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.397848" elapsed="0.000017"/>
-</kw>
-<kw name="Call Method" owner="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--disable-gpu</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.397926" elapsed="0.000015"/>
-</kw>
-<kw name="Call Method" owner="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--disable-software-rasterizer</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.398003" elapsed="0.000015"/>
-</kw>
-<kw name="Call Method" owner="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--window-size=1920,1080</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.398098" elapsed="0.000015"/>
+<status status="PASS" start="2026-04-02T11:57:51.781321" elapsed="0.000192"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T11:57:51.781932" level="INFO">Opening browser 'chrome' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
 <arg>${LOGIN_URL}</arg>
 <arg>chrome</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.398201" elapsed="0.000017"/>
+<status status="PASS" start="2026-04-02T11:57:51.781646" elapsed="1.204989"/>
+</kw>
+<kw name="Maximize Browser Windo">
+<msg time="2026-04-02T11:57:52.988662" level="FAIL">No keyword with name 'Maximize Browser Windo' found. Did you mean:
+    SeleniumLibrary.Maximize Browser Window
+    SeleniumLibrary.Minimize Browser Window</msg>
+<status status="FAIL" start="2026-04-02T11:57:52.988606" elapsed="0.000108">No keyword with name 'Maximize Browser Windo' found. Did you mean:
+    SeleniumLibrary.Maximize Browser Window
+    SeleniumLibrary.Minimize Browser Window</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.398284" elapsed="0.000015"/>
+<status status="NOT RUN" start="2026-04-02T11:57:52.988885" elapsed="0.000034"/>
 </kw>
-<status status="FAIL" start="2026-04-02T11:50:26.396335" elapsed="0.002059">Evaluating expression 'from selenium.webdriver import ChromeOptions;' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+<status status="FAIL" start="2026-04-02T11:57:51.780832" elapsed="1.208214">No keyword with name 'Maximize Browser Windo' found. Did you mean:
+    SeleniumLibrary.Maximize Browser Window
+    SeleniumLibrary.Minimize Browser Window</status>
 </kw>
 <kw name="Login With Credentials" owner="ui_keywords">
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="NOT RUN" start="2026-04-02T11:50:26.398527" elapsed="0.000025"/>
+<status status="NOT RUN" start="2026-04-02T11:57:52.989230" elapsed="0.000032"/>
 </kw>
 <kw name="Open Dashboard" owner="DashboardPage">
-<status status="NOT RUN" start="2026-04-02T11:50:26.398649" elapsed="0.000019"/>
+<status status="NOT RUN" start="2026-04-02T11:57:52.989383" elapsed="0.000027"/>
 </kw>
 <kw name="Dashboard Should Be Visible" owner="DashboardPage">
-<status status="NOT RUN" start="2026-04-02T11:50:26.398740" elapsed="0.000017"/>
+<status status="NOT RUN" start="2026-04-02T11:57:52.989513" elapsed="0.000026"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.398816" elapsed="0.000015"/>
+<status status="NOT RUN" start="2026-04-02T11:57:52.989622" elapsed="0.000024"/>
 </kw>
-<status status="FAIL" start="2026-04-02T11:50:26.395757" elapsed="0.003189">Evaluating expression 'from selenium.webdriver import ChromeOptions;' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+<status status="FAIL" start="2026-04-02T11:57:51.780266" elapsed="1.209526">No keyword with name 'Maximize Browser Windo' found. Did you mean:
+    SeleniumLibrary.Maximize Browser Window
+    SeleniumLibrary.Minimize Browser Window</status>
 </test>
-<status status="FAIL" start="2026-04-02T11:50:26.149502" elapsed="0.249781"/>
+<status status="FAIL" start="2026-04-02T11:57:51.529005" elapsed="1.461172"/>
 </suite>
 <suite id="s1-s2-s2" name="Login Tests" source="/tests/tests/ui/login_tests.robot">
 <test id="s1-s2-s2-t1" name="Valid Login" line="9">
 <kw name="Open Browser To Application" owner="ui_keywords">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-04-02T11:50:26.403346" level="FAIL">Evaluating expression 'from selenium.webdriver import ChromeOptions;' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</msg>
+<kw name="Chrome Ci Options" owner="browser_options">
+<msg time="2026-04-02T11:57:52.994768" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fe80e5eee40&gt;</msg>
 <var>${options}</var>
-<arg>from selenium.webdriver import ChromeOptions;</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="FAIL" start="2026-04-02T11:50:26.403079" elapsed="0.000409">Evaluating expression 'from selenium.webdriver import ChromeOptions;' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
-</kw>
-<kw name="o=ChromeOptions(); o">
-<arg>selenium.webdriver</arg>
-<status status="NOT RUN" start="2026-04-02T11:50:26.403671" elapsed="0.000025"/>
-</kw>
-<kw name="Call Method" owner="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--headless=new</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.403779" elapsed="0.000030"/>
-</kw>
-<kw name="Call Method" owner="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--no-sandbox</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.403899" elapsed="0.000024"/>
-</kw>
-<kw name="Call Method" owner="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--disable-dev-shm-usage</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.404013" elapsed="0.000049"/>
-</kw>
-<kw name="Call Method" owner="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--disable-gpu</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.404145" elapsed="0.000018"/>
-</kw>
-<kw name="Call Method" owner="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--disable-software-rasterizer</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.404225" elapsed="0.000014"/>
-</kw>
-<kw name="Call Method" owner="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--window-size=1920,1080</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.404295" elapsed="0.000014"/>
+<status status="PASS" start="2026-04-02T11:57:52.994627" elapsed="0.000178"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T11:57:52.996313" level="INFO">Opening browser 'chrome' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
 <arg>${LOGIN_URL}</arg>
 <arg>chrome</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.404389" elapsed="0.000015"/>
+<status status="PASS" start="2026-04-02T11:57:52.994956" elapsed="1.080077"/>
+</kw>
+<kw name="Maximize Browser Windo">
+<msg time="2026-04-02T11:57:54.076889" level="FAIL">No keyword with name 'Maximize Browser Windo' found. Did you mean:
+    SeleniumLibrary.Maximize Browser Window
+    SeleniumLibrary.Minimize Browser Window</msg>
+<status status="FAIL" start="2026-04-02T11:57:54.076800" elapsed="0.000143">No keyword with name 'Maximize Browser Windo' found. Did you mean:
+    SeleniumLibrary.Maximize Browser Window
+    SeleniumLibrary.Minimize Browser Window</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.404465" elapsed="0.000014"/>
+<status status="NOT RUN" start="2026-04-02T11:57:54.077077" elapsed="0.000030"/>
 </kw>
-<status status="FAIL" start="2026-04-02T11:50:26.402872" elapsed="0.001688">Evaluating expression 'from selenium.webdriver import ChromeOptions;' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+<status status="FAIL" start="2026-04-02T11:57:52.994414" elapsed="1.082804">No keyword with name 'Maximize Browser Windo' found. Did you mean:
+    SeleniumLibrary.Maximize Browser Window
+    SeleniumLibrary.Minimize Browser Window</status>
 </kw>
 <kw name="Login With Credentials" owner="ui_keywords">
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="NOT RUN" start="2026-04-02T11:50:26.404678" elapsed="0.000021"/>
+<status status="NOT RUN" start="2026-04-02T11:57:54.077392" elapsed="0.000031"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
 <arg>Employee Management</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.404769" elapsed="0.000015"/>
+<status status="NOT RUN" start="2026-04-02T11:57:54.077572" elapsed="0.000028"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2026-04-02T11:50:26.404843" elapsed="0.000014"/>
+<status status="NOT RUN" start="2026-04-02T11:57:54.077690" elapsed="0.000023"/>
 </kw>
-<status status="FAIL" start="2026-04-02T11:50:26.402478" elapsed="0.002476">Evaluating expression 'from selenium.webdriver import ChromeOptions;' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+<status status="FAIL" start="2026-04-02T11:57:52.994021" elapsed="1.083873">No keyword with name 'Maximize Browser Windo' found. Did you mean:
+    SeleniumLibrary.Maximize Browser Window
+    SeleniumLibrary.Minimize Browser Window</status>
 </test>
-<status status="FAIL" start="2026-04-02T11:50:26.399769" elapsed="0.005470"/>
+<status status="FAIL" start="2026-04-02T11:57:52.990740" elapsed="1.087496"/>
 </suite>
-<status status="FAIL" start="2026-04-02T11:50:26.148547" elapsed="0.257167"/>
+<status status="FAIL" start="2026-04-02T11:57:51.528017" elapsed="2.550906"/>
 </suite>
-<status status="FAIL" start="2026-04-02T11:50:22.061297" elapsed="4.344717"/>
+<status status="FAIL" start="2026-04-02T11:57:50.289398" elapsed="3.790080"/>
 </suite>
 <statistics>
 <total>
