@@ -9,5 +9,5 @@ def chrome_ci_options():
     o.add_argument("--disable-dev-shm-usage")
     o.add_argument("--disable-gpu")
     o.add_argument("--disable-software-rasterizer")
-    o.add_argument("--window-size=1920,1080")
+    # o.add_argument("--window-size=1920,1080")
     return o
