@@ -5,8 +5,8 @@ Resource   ../Pages/LoginPage.robot
 
 *** Keywords ***
 Open Browser To Application
-    ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, 
-    selenium.webdriver
+    ${options}=    Evaluate    from selenium.webdriver import ChromeOptions;
+    o=ChromeOptions(); o    selenium.webdriver
     Call Method    ${options}    add_argument    --headless=new
     Call Method    ${options}    add_argument    --no-sandbox
     Call Method    ${options}    add_argument    --disable-dev-shm-usage
