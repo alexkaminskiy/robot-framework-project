@@ -1,153 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T10:02:34.931835" rpa="false" schemaversion="5">
-<suite id="s1" name="Tests" source="/tests/tests">
-<suite id="s1-s1" name="Api" source="/tests/tests/api">
-<suite id="s1-s1-s1" name="User Api Tests" source="/tests/tests/api/user_api_tests.robot">
-<test id="s1-s1-s1-t1" name="Login API" line="8">
-<kw name="API Login" owner="api_keywords">
-<kw name="Login" owner="CustomAPI">
-<msg time="2026-04-02T10:02:35.686981" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzEzNTUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.EZqLG6iFiEDv_CL7esXGfXbCy9YvlK_zp1DNjJHb...</msg>
-<var>${result}</var>
-<arg>${user}</arg>
-<arg>${password}</arg>
-<status status="PASS" start="2026-04-02T10:02:35.270250" elapsed="0.416789"/>
-</kw>
-<return>
-<value>${result}</value>
-<status status="PASS" start="2026-04-02T10:02:35.687127" elapsed="0.000057"/>
-</return>
-<msg time="2026-04-02T10:02:35.687339" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzEzNTUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.EZqLG6iFiEDv_CL7esXGfXbCy9YvlK_zp1DNjJHb...</msg>
-<var>${token}</var>
-<arg>${VALID_USER}</arg>
-<arg>${VALID_PASS}</arg>
-<status status="PASS" start="2026-04-02T10:02:35.269566" elapsed="0.417797"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T10:02:35.688017" level="INFO">Length is 2.</msg>
-<arg>${token}</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T10:02:35.687537" elapsed="0.000522"/>
-</kw>
-<status status="PASS" start="2026-04-02T10:02:35.268715" elapsed="0.419455"/>
-</test>
-<test id="s1-s1-s1-t2" name="Get Authenticate List" line="12">
-<kw name="API Get Auth" owner="api_keywords">
-<kw name="Get Auth" owner="CustomAPI">
-<msg time="2026-04-02T10:02:35.982211" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzEzNTUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.EZqLG6iFiEDv_CL7esXGfXbCy9YvlK_zp1DNjJHbZUg']</msg>
-<var>${result}</var>
-<status status="PASS" start="2026-04-02T10:02:35.689154" elapsed="0.293106"/>
-</kw>
-<return>
-<value>${result}</value>
-<status status="PASS" start="2026-04-02T10:02:35.982339" elapsed="0.000062"/>
-</return>
-<msg time="2026-04-02T10:02:35.982617" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzEzNTUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.EZqLG6iFiEDv_CL7esXGfXbCy9YvlK_zp1DNjJHbZUg']</msg>
-<var>${list}</var>
-<status status="PASS" start="2026-04-02T10:02:35.688930" elapsed="0.293716"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T10:02:35.983084" level="INFO">Length is 1.</msg>
-<arg>${list}</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T10:02:35.982768" elapsed="0.000354"/>
-</kw>
-<status status="PASS" start="2026-04-02T10:02:35.688428" elapsed="0.294798"/>
-</test>
-<status status="PASS" start="2026-04-02T10:02:34.988535" elapsed="0.995190"/>
-</suite>
-<status status="PASS" start="2026-04-02T10:02:34.987512" elapsed="0.996841"/>
-</suite>
-<suite id="s1-s2" name="Ui" source="/tests/tests/ui">
-<suite id="s1-s2-s1" name="Dashboard Tests" source="/tests/tests/ui/dashboard_tests.robot">
-<test id="s1-s2-s1-t1" name="Open Dashboard" line="9">
+<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T10:14:04.087850" rpa="false" schemaversion="5">
+<suite id="s1" name="Ui" source="/tests/tests/ui">
+<suite id="s1-s1" name="Dashboard Tests" source="/tests/tests/ui/dashboard_tests.robot">
+<test id="s1-s1-t1" name="Open Dashboard" line="9">
 <kw name="Open Browser To Application" owner="ui_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-02T10:02:36.240338" level="INFO">Opening browser 'chrome options=add_argument("--headless"), add_argument("--no-sandbox"), add_argument("--disable-dev-shm-usage"), add_argument("--disable-gpu"), add_argument("--disable-software-rasterizer")' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
-<msg time="2026-04-02T10:02:36.240386" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-04-02T10:02:36.240508" level="FAIL">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</msg>
+<msg time="2026-04-02T10:14:04.468326" level="INFO">Opening browser 'chrome options=add_argument("--headless"), add_argument("--no-sandbox"), add_argument("--disable-dev-shm-usage"), add_argument("--disable-gpu"), add_argument("--disable-software-rasterizer")' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
+<msg time="2026-04-02T10:14:04.468388" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-02T10:14:04.468490" level="FAIL">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</msg>
 <arg>${LOGIN_URL}</arg>
 <arg>${BROWSER} options=add_argument("--headless"), add_argument("--no-sandbox"), add_argument("--disable-dev-shm-usage"), add_argument("--disable-gpu"), add_argument("--disable-software-rasterizer")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2026-04-02T10:02:36.240069" elapsed="0.001435">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
+<status status="FAIL" start="2026-04-02T10:14:04.467999" elapsed="0.001486">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-04-02T10:02:36.241658" elapsed="0.000029"/>
+<status status="NOT RUN" start="2026-04-02T10:14:04.469643" elapsed="0.000030"/>
 </kw>
-<status status="FAIL" start="2026-04-02T10:02:36.239575" elapsed="0.002220">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
+<status status="FAIL" start="2026-04-02T10:14:04.467298" elapsed="0.002492">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
 </kw>
 <kw name="Login With Credentials" owner="ui_keywords">
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="NOT RUN" start="2026-04-02T10:02:36.241951" elapsed="0.000029"/>
+<status status="NOT RUN" start="2026-04-02T10:14:04.469958" elapsed="0.000032"/>
 </kw>
 <kw name="Open Dashboard" owner="DashboardPage">
-<status status="NOT RUN" start="2026-04-02T10:02:36.242096" elapsed="0.000026"/>
+<status status="NOT RUN" start="2026-04-02T10:14:04.470110" elapsed="0.000032"/>
 </kw>
 <kw name="Dashboard Should Be Visible" owner="DashboardPage">
-<status status="NOT RUN" start="2026-04-02T10:02:36.242224" elapsed="0.000030"/>
+<status status="NOT RUN" start="2026-04-02T10:14:04.470245" elapsed="0.000025"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2026-04-02T10:02:36.242335" elapsed="0.000026"/>
+<status status="NOT RUN" start="2026-04-02T10:14:04.470374" elapsed="0.000028"/>
 </kw>
-<status status="FAIL" start="2026-04-02T10:02:36.239021" elapsed="0.003483">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
+<status status="FAIL" start="2026-04-02T10:14:04.466532" elapsed="0.004004">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
 </test>
-<status status="FAIL" start="2026-04-02T10:02:35.985894" elapsed="0.256966"/>
+<status status="FAIL" start="2026-04-02T10:14:04.142749" elapsed="0.328238"/>
 </suite>
-<suite id="s1-s2-s2" name="Login Tests" source="/tests/tests/ui/login_tests.robot">
-<test id="s1-s2-s2-t1" name="Valid Login" line="9">
+<suite id="s1-s2" name="Login Tests" source="/tests/tests/ui/login_tests.robot">
+<test id="s1-s2-t1" name="Valid Login" line="9">
 <kw name="Open Browser To Application" owner="ui_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-02T10:02:36.247262" level="INFO">Opening browser 'chrome options=add_argument("--headless"), add_argument("--no-sandbox"), add_argument("--disable-dev-shm-usage"), add_argument("--disable-gpu"), add_argument("--disable-software-rasterizer")' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
-<msg time="2026-04-02T10:02:36.247305" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-04-02T10:02:36.247373" level="FAIL">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</msg>
+<msg time="2026-04-02T10:14:04.475242" level="INFO">Opening browser 'chrome options=add_argument("--headless"), add_argument("--no-sandbox"), add_argument("--disable-dev-shm-usage"), add_argument("--disable-gpu"), add_argument("--disable-software-rasterizer")' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
+<msg time="2026-04-02T10:14:04.475284" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-02T10:14:04.475373" level="FAIL">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</msg>
 <arg>${LOGIN_URL}</arg>
 <arg>${BROWSER} options=add_argument("--headless"), add_argument("--no-sandbox"), add_argument("--disable-dev-shm-usage"), add_argument("--disable-gpu"), add_argument("--disable-software-rasterizer")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2026-04-02T10:02:36.247014" elapsed="0.000747">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
+<status status="FAIL" start="2026-04-02T10:14:04.475011" elapsed="0.000708">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-04-02T10:02:36.247886" elapsed="0.000073"/>
+<status status="NOT RUN" start="2026-04-02T10:14:04.475840" elapsed="0.000028"/>
 </kw>
-<status status="FAIL" start="2026-04-02T10:02:36.246601" elapsed="0.001455">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
+<status status="FAIL" start="2026-04-02T10:14:04.474782" elapsed="0.001175">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
 </kw>
 <kw name="Login With Credentials" owner="ui_keywords">
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="NOT RUN" start="2026-04-02T10:02:36.248198" elapsed="0.000029"/>
+<status status="NOT RUN" start="2026-04-02T10:14:04.476100" elapsed="0.000029"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
 <arg>Employee Management</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-04-02T10:02:36.248318" elapsed="0.000025"/>
+<status status="NOT RUN" start="2026-04-02T10:14:04.476216" elapsed="0.000025"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2026-04-02T10:02:36.248426" elapsed="0.000023"/>
+<status status="NOT RUN" start="2026-04-02T10:14:04.476343" elapsed="0.000025"/>
 </kw>
-<status status="FAIL" start="2026-04-02T10:02:36.246145" elapsed="0.002438">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
+<status status="FAIL" start="2026-04-02T10:14:04.474374" elapsed="0.002116">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
 </test>
-<status status="FAIL" start="2026-04-02T10:02:36.243409" elapsed="0.005507"/>
+<status status="FAIL" start="2026-04-02T10:14:04.471506" elapsed="0.005291"/>
 </suite>
-<status status="FAIL" start="2026-04-02T10:02:35.984877" elapsed="0.264710"/>
-</suite>
-<status status="FAIL" start="2026-04-02T10:02:34.933140" elapsed="1.316939"/>
+<status status="FAIL" start="2026-04-02T10:14:04.089208" elapsed="0.388299"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="2" skip="0">All Tests</stat>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="2" fail="2" skip="0">Tests</stat>
-<stat name="Api" id="s1-s1" pass="2" fail="0" skip="0">Tests.Api</stat>
-<stat name="User Api Tests" id="s1-s1-s1" pass="2" fail="0" skip="0">Tests.Api.User Api Tests</stat>
-<stat name="Ui" id="s1-s2" pass="0" fail="2" skip="0">Tests.Ui</stat>
-<stat name="Dashboard Tests" id="s1-s2-s1" pass="0" fail="1" skip="0">Tests.Ui.Dashboard Tests</stat>
-<stat name="Login Tests" id="s1-s2-s2" pass="0" fail="1" skip="0">Tests.Ui.Login Tests</stat>
+<stat name="Ui" id="s1" pass="0" fail="2" skip="0">Ui</stat>
+<stat name="Dashboard Tests" id="s1-s1" pass="0" fail="1" skip="0">Ui.Dashboard Tests</stat>
+<stat name="Login Tests" id="s1-s2" pass="0" fail="1" skip="0">Ui.Login Tests</stat>
 </suite>
 </statistics>
 <errors>
