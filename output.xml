@@ -1,315 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T09:51:04.162968" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T10:02:34.931835" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/tests/tests">
 <suite id="s1-s1" name="Api" source="/tests/tests/api">
 <suite id="s1-s1-s1" name="User Api Tests" source="/tests/tests/api/user_api_tests.robot">
 <test id="s1-s1-s1-t1" name="Login API" line="8">
 <kw name="API Login" owner="api_keywords">
 <kw name="Login" owner="CustomAPI">
-<msg time="2026-04-02T09:51:05.178392" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzA2NjUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.Xi9u9Dx2PRUKptR0bVjOgAuUJsGJ6xhjx-6qs6QT...</msg>
+<msg time="2026-04-02T10:02:35.686981" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzEzNTUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.EZqLG6iFiEDv_CL7esXGfXbCy9YvlK_zp1DNjJHb...</msg>
 <var>${result}</var>
 <arg>${user}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-04-02T09:51:04.603060" elapsed="0.575390"/>
+<status status="PASS" start="2026-04-02T10:02:35.270250" elapsed="0.416789"/>
 </kw>
 <return>
 <value>${result}</value>
-<status status="PASS" start="2026-04-02T09:51:05.178538" elapsed="0.000059"/>
+<status status="PASS" start="2026-04-02T10:02:35.687127" elapsed="0.000057"/>
 </return>
-<msg time="2026-04-02T09:51:05.178819" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzA2NjUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.Xi9u9Dx2PRUKptR0bVjOgAuUJsGJ6xhjx-6qs6QT...</msg>
+<msg time="2026-04-02T10:02:35.687339" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzEzNTUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.EZqLG6iFiEDv_CL7esXGfXbCy9YvlK_zp1DNjJHb...</msg>
 <var>${token}</var>
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="PASS" start="2026-04-02T09:51:04.602388" elapsed="0.576464"/>
+<status status="PASS" start="2026-04-02T10:02:35.269566" elapsed="0.417797"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T09:51:05.179473" level="INFO">Length is 2.</msg>
+<msg time="2026-04-02T10:02:35.688017" level="INFO">Length is 2.</msg>
 <arg>${token}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T09:51:05.179001" elapsed="0.000514"/>
+<status status="PASS" start="2026-04-02T10:02:35.687537" elapsed="0.000522"/>
 </kw>
-<status status="PASS" start="2026-04-02T09:51:04.601589" elapsed="0.578032"/>
+<status status="PASS" start="2026-04-02T10:02:35.268715" elapsed="0.419455"/>
 </test>
 <test id="s1-s1-s1-t2" name="Get Authenticate List" line="12">
 <kw name="API Get Auth" owner="api_keywords">
 <kw name="Get Auth" owner="CustomAPI">
-<msg time="2026-04-02T09:51:05.466519" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzA2NjUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.Xi9u9Dx2PRUKptR0bVjOgAuUJsGJ6xhjx-6qs6QT9Ak']</msg>
+<msg time="2026-04-02T10:02:35.982211" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzEzNTUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.EZqLG6iFiEDv_CL7esXGfXbCy9YvlK_zp1DNjJHbZUg']</msg>
 <var>${result}</var>
-<status status="PASS" start="2026-04-02T09:51:05.180525" elapsed="0.286034"/>
+<status status="PASS" start="2026-04-02T10:02:35.689154" elapsed="0.293106"/>
 </kw>
 <return>
 <value>${result}</value>
-<status status="PASS" start="2026-04-02T09:51:05.466623" elapsed="0.000056"/>
+<status status="PASS" start="2026-04-02T10:02:35.982339" elapsed="0.000062"/>
 </return>
-<msg time="2026-04-02T09:51:05.466879" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzA2NjUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.Xi9u9Dx2PRUKptR0bVjOgAuUJsGJ6xhjx-6qs6QT9Ak']</msg>
+<msg time="2026-04-02T10:02:35.982617" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzEzNTUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.EZqLG6iFiEDv_CL7esXGfXbCy9YvlK_zp1DNjJHbZUg']</msg>
 <var>${list}</var>
-<status status="PASS" start="2026-04-02T09:51:05.180325" elapsed="0.286577"/>
+<status status="PASS" start="2026-04-02T10:02:35.688930" elapsed="0.293716"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T09:51:05.467269" level="INFO">Length is 1.</msg>
+<msg time="2026-04-02T10:02:35.983084" level="INFO">Length is 1.</msg>
 <arg>${list}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T09:51:05.466996" elapsed="0.000311"/>
+<status status="PASS" start="2026-04-02T10:02:35.982768" elapsed="0.000354"/>
 </kw>
-<status status="PASS" start="2026-04-02T09:51:05.179884" elapsed="0.287516"/>
+<status status="PASS" start="2026-04-02T10:02:35.688428" elapsed="0.294798"/>
 </test>
-<status status="PASS" start="2026-04-02T09:51:04.218311" elapsed="1.249548"/>
+<status status="PASS" start="2026-04-02T10:02:34.988535" elapsed="0.995190"/>
 </suite>
-<status status="PASS" start="2026-04-02T09:51:04.217371" elapsed="1.251045"/>
+<status status="PASS" start="2026-04-02T10:02:34.987512" elapsed="0.996841"/>
 </suite>
 <suite id="s1-s2" name="Ui" source="/tests/tests/ui">
 <suite id="s1-s2-s1" name="Dashboard Tests" source="/tests/tests/ui/dashboard_tests.robot">
 <test id="s1-s2-s1-t1" name="Open Dashboard" line="9">
 <kw name="Open Browser To Application" owner="ui_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-02T09:51:05.716475" level="INFO">Opening browser 'chrome' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
-<msg time="2026-04-02T09:51:05.942066" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-04-02T09:51:05.942245" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x56374ab50252 &lt;unknown&gt;
-#1 0x56374a520226 &lt;unknown&gt;
-#2 0x56374a55d100 &lt;unknown&gt;
-#3 0x56374a556fb3 &lt;unknown&gt;
-#4 0x56374a5a666c &lt;unknown&gt;
-#5 0x56374a5a5dbd &lt;unknown&gt;
-#6 0x56374a596fa7 &lt;unknown&gt;
-#7 0x56374a564de2 &lt;unknown&gt;
-#8 0x56374a565c55 &lt;unknown&gt;
-#9 0x56374ab13ee4 &lt;unknown&gt;
-#10 0x56374ab17236 &lt;unknown&gt;
-#11 0x56374ab16cee &lt;unknown&gt;
-#12 0x56374ab176a9 &lt;unknown&gt;
-#13 0x56374ab036ea &lt;unknown&gt;
-#14 0x56374ab17a2a &lt;unknown&gt;
-#15 0x56374aaec359 &lt;unknown&gt;
-#16 0x56374ab3cf79 &lt;unknown&gt;
-#17 0x56374ab3d16d &lt;unknown&gt;
-#18 0x56374ab4ec8e &lt;unknown&gt;
-#19 0x7f8a95502b7b &lt;unknown&gt;
-</msg>
+<msg time="2026-04-02T10:02:36.240338" level="INFO">Opening browser 'chrome options=add_argument("--headless"), add_argument("--no-sandbox"), add_argument("--disable-dev-shm-usage"), add_argument("--disable-gpu"), add_argument("--disable-software-rasterizer")' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
+<msg time="2026-04-02T10:02:36.240386" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-02T10:02:36.240508" level="FAIL">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</msg>
 <arg>${LOGIN_URL}</arg>
-<arg>${BROWSER}</arg>
+<arg>${BROWSER} options=add_argument("--headless"), add_argument("--no-sandbox"), add_argument("--disable-dev-shm-usage"), add_argument("--disable-gpu"), add_argument("--disable-software-rasterizer")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2026-04-02T09:51:05.716269" elapsed="0.227830">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x56374ab50252 &lt;unknown&gt;
-#1 0x56374a520226 &lt;unknown&gt;
-#2 0x56374a55d100 &lt;unknown&gt;
-#3 0x56374a556fb3 &lt;unknown&gt;
-#4 0x56374a5a666c &lt;unknown&gt;
-#5 0x56374a5a5dbd &lt;unknown&gt;
-#6 0x56374a596fa7 &lt;unknown&gt;
-#7 0x56374a564de2 &lt;unknown&gt;
-#8 0x56374a565c55 &lt;unknown&gt;
-#9 0x56374ab13ee4 &lt;unknown&gt;
-#10 0x56374ab17236 &lt;unknown&gt;
-#11 0x56374ab16cee &lt;unknown&gt;
-#12 0x56374ab176a9 &lt;unknown&gt;
-#13 0x56374ab036ea &lt;unknown&gt;
-#14 0x56374ab17a2a &lt;unknown&gt;
-#15 0x56374aaec359 &lt;unknown&gt;
-#16 0x56374ab3cf79 &lt;unknown&gt;
-#17 0x56374ab3d16d &lt;unknown&gt;
-#18 0x56374ab4ec8e &lt;unknown&gt;
-#19 0x7f8a95502b7b &lt;unknown&gt;
-</status>
+<status status="FAIL" start="2026-04-02T10:02:36.240069" elapsed="0.001435">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-04-02T09:51:05.944313" elapsed="0.000036"/>
+<status status="NOT RUN" start="2026-04-02T10:02:36.241658" elapsed="0.000029"/>
 </kw>
-<status status="FAIL" start="2026-04-02T09:51:05.715784" elapsed="0.228696">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x56374ab50252 &lt;unknown&gt;
-#1 0x56374a520226 &lt;unknown&gt;
-#2 0x56374a55d100 &lt;unknown&gt;
-#3 0x56374a556fb3 &lt;unknown&gt;
-#4 0x56374a5a666c &lt;unknown&gt;
-#5 0x56374a5a5dbd &lt;unknown&gt;
-#6 0x56374a596fa7 &lt;unknown&gt;
-#7 0x56374a564de2 &lt;unknown&gt;
-#8 0x56374a565c55 &lt;unknown&gt;
-#9 0x56374ab13ee4 &lt;unknown&gt;
-#10 0x56374ab17236 &lt;unknown&gt;
-#11 0x56374ab16cee &lt;unknown&gt;
-#12 0x56374ab176a9 &lt;unknown&gt;
-#13 0x56374ab036ea &lt;unknown&gt;
-#14 0x56374ab17a2a &lt;unknown&gt;
-#15 0x56374aaec359 &lt;unknown&gt;
-#16 0x56374ab3cf79 &lt;unknown&gt;
-#17 0x56374ab3d16d &lt;unknown&gt;
-#18 0x56374ab4ec8e &lt;unknown&gt;
-#19 0x7f8a95502b7b &lt;unknown&gt;
-</status>
+<status status="FAIL" start="2026-04-02T10:02:36.239575" elapsed="0.002220">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
 </kw>
 <kw name="Login With Credentials" owner="ui_keywords">
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="NOT RUN" start="2026-04-02T09:51:05.944674" elapsed="0.000032"/>
+<status status="NOT RUN" start="2026-04-02T10:02:36.241951" elapsed="0.000029"/>
 </kw>
 <kw name="Open Dashboard" owner="DashboardPage">
-<status status="NOT RUN" start="2026-04-02T09:51:05.944854" elapsed="0.000027"/>
+<status status="NOT RUN" start="2026-04-02T10:02:36.242096" elapsed="0.000026"/>
 </kw>
 <kw name="Dashboard Should Be Visible" owner="DashboardPage">
-<status status="NOT RUN" start="2026-04-02T09:51:05.944984" elapsed="0.000029"/>
+<status status="NOT RUN" start="2026-04-02T10:02:36.242224" elapsed="0.000030"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2026-04-02T09:51:05.945098" elapsed="0.000024"/>
+<status status="NOT RUN" start="2026-04-02T10:02:36.242335" elapsed="0.000026"/>
 </kw>
-<status status="FAIL" start="2026-04-02T09:51:05.715267" elapsed="0.230005">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x56374ab50252 &lt;unknown&gt;
-#1 0x56374a520226 &lt;unknown&gt;
-#2 0x56374a55d100 &lt;unknown&gt;
-#3 0x56374a556fb3 &lt;unknown&gt;
-#4 0x56374a5a666c &lt;unknown&gt;
-#5 0x56374a5a5dbd &lt;unknown&gt;
-#6 0x56374a596fa7 &lt;unknown&gt;
-#7 0x56374a564de2 &lt;unknown&gt;
-#8 0x56374a565c55 &lt;unknown&gt;
-#9 0x56374ab13ee4 &lt;unknown&gt;
-#10 0x56374ab17236 &lt;unknown&gt;
-#11 0x56374ab16cee &lt;unknown&gt;
-#12 0x56374ab176a9 &lt;unknown&gt;
-#13 0x56374ab036ea &lt;unknown&gt;
-#14 0x56374ab17a2a &lt;unknown&gt;
-#15 0x56374aaec359 &lt;unknown&gt;
-#16 0x56374ab3cf79 &lt;unknown&gt;
-#17 0x56374ab3d16d &lt;unknown&gt;
-#18 0x56374ab4ec8e &lt;unknown&gt;
-#19 0x7f8a95502b7b &lt;unknown&gt;
-</status>
+<status status="FAIL" start="2026-04-02T10:02:36.239021" elapsed="0.003483">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
 </test>
-<status status="FAIL" start="2026-04-02T09:51:05.469703" elapsed="0.475998"/>
+<status status="FAIL" start="2026-04-02T10:02:35.985894" elapsed="0.256966"/>
 </suite>
 <suite id="s1-s2-s2" name="Login Tests" source="/tests/tests/ui/login_tests.robot">
 <test id="s1-s2-s2-t1" name="Valid Login" line="9">
 <kw name="Open Browser To Application" owner="ui_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-02T09:51:05.951151" level="INFO">Opening browser 'chrome' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
-<msg time="2026-04-02T09:51:06.093122" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-04-02T09:51:06.093282" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x55f2770c1252 &lt;unknown&gt;
-#1 0x55f276a91226 &lt;unknown&gt;
-#2 0x55f276ace100 &lt;unknown&gt;
-#3 0x55f276ac7fb3 &lt;unknown&gt;
-#4 0x55f276b1766c &lt;unknown&gt;
-#5 0x55f276b16dbd &lt;unknown&gt;
-#6 0x55f276b07fa7 &lt;unknown&gt;
-#7 0x55f276ad5de2 &lt;unknown&gt;
-#8 0x55f276ad6c55 &lt;unknown&gt;
-#9 0x55f277084ee4 &lt;unknown&gt;
-#10 0x55f277088236 &lt;unknown&gt;
-#11 0x55f277087cee &lt;unknown&gt;
-#12 0x55f2770886a9 &lt;unknown&gt;
-#13 0x55f2770746ea &lt;unknown&gt;
-#14 0x55f277088a2a &lt;unknown&gt;
-#15 0x55f27705d359 &lt;unknown&gt;
-#16 0x55f2770adf79 &lt;unknown&gt;
-#17 0x55f2770ae16d &lt;unknown&gt;
-#18 0x55f2770bfc8e &lt;unknown&gt;
-#19 0x7fa262180b7b &lt;unknown&gt;
-</msg>
+<msg time="2026-04-02T10:02:36.247262" level="INFO">Opening browser 'chrome options=add_argument("--headless"), add_argument("--no-sandbox"), add_argument("--disable-dev-shm-usage"), add_argument("--disable-gpu"), add_argument("--disable-software-rasterizer")' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
+<msg time="2026-04-02T10:02:36.247305" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-02T10:02:36.247373" level="FAIL">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</msg>
 <arg>${LOGIN_URL}</arg>
-<arg>${BROWSER}</arg>
+<arg>${BROWSER} options=add_argument("--headless"), add_argument("--no-sandbox"), add_argument("--disable-dev-shm-usage"), add_argument("--disable-gpu"), add_argument("--disable-software-rasterizer")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2026-04-02T09:51:05.950940" elapsed="0.143164">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x55f2770c1252 &lt;unknown&gt;
-#1 0x55f276a91226 &lt;unknown&gt;
-#2 0x55f276ace100 &lt;unknown&gt;
-#3 0x55f276ac7fb3 &lt;unknown&gt;
-#4 0x55f276b1766c &lt;unknown&gt;
-#5 0x55f276b16dbd &lt;unknown&gt;
-#6 0x55f276b07fa7 &lt;unknown&gt;
-#7 0x55f276ad5de2 &lt;unknown&gt;
-#8 0x55f276ad6c55 &lt;unknown&gt;
-#9 0x55f277084ee4 &lt;unknown&gt;
-#10 0x55f277088236 &lt;unknown&gt;
-#11 0x55f277087cee &lt;unknown&gt;
-#12 0x55f2770886a9 &lt;unknown&gt;
-#13 0x55f2770746ea &lt;unknown&gt;
-#14 0x55f277088a2a &lt;unknown&gt;
-#15 0x55f27705d359 &lt;unknown&gt;
-#16 0x55f2770adf79 &lt;unknown&gt;
-#17 0x55f2770ae16d &lt;unknown&gt;
-#18 0x55f2770bfc8e &lt;unknown&gt;
-#19 0x7fa262180b7b &lt;unknown&gt;
-</status>
+<status status="FAIL" start="2026-04-02T10:02:36.247014" elapsed="0.000747">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-04-02T09:51:06.094299" elapsed="0.000036"/>
+<status status="NOT RUN" start="2026-04-02T10:02:36.247886" elapsed="0.000073"/>
 </kw>
-<status status="FAIL" start="2026-04-02T09:51:05.949824" elapsed="0.144628">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x55f2770c1252 &lt;unknown&gt;
-#1 0x55f276a91226 &lt;unknown&gt;
-#2 0x55f276ace100 &lt;unknown&gt;
-#3 0x55f276ac7fb3 &lt;unknown&gt;
-#4 0x55f276b1766c &lt;unknown&gt;
-#5 0x55f276b16dbd &lt;unknown&gt;
-#6 0x55f276b07fa7 &lt;unknown&gt;
-#7 0x55f276ad5de2 &lt;unknown&gt;
-#8 0x55f276ad6c55 &lt;unknown&gt;
-#9 0x55f277084ee4 &lt;unknown&gt;
-#10 0x55f277088236 &lt;unknown&gt;
-#11 0x55f277087cee &lt;unknown&gt;
-#12 0x55f2770886a9 &lt;unknown&gt;
-#13 0x55f2770746ea &lt;unknown&gt;
-#14 0x55f277088a2a &lt;unknown&gt;
-#15 0x55f27705d359 &lt;unknown&gt;
-#16 0x55f2770adf79 &lt;unknown&gt;
-#17 0x55f2770ae16d &lt;unknown&gt;
-#18 0x55f2770bfc8e &lt;unknown&gt;
-#19 0x7fa262180b7b &lt;unknown&gt;
-</status>
+<status status="FAIL" start="2026-04-02T10:02:36.246601" elapsed="0.001455">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
 </kw>
 <kw name="Login With Credentials" owner="ui_keywords">
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="NOT RUN" start="2026-04-02T09:51:06.094636" elapsed="0.000032"/>
+<status status="NOT RUN" start="2026-04-02T10:02:36.248198" elapsed="0.000029"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
 <arg>Employee Management</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-04-02T09:51:06.094792" elapsed="0.000030"/>
+<status status="NOT RUN" start="2026-04-02T10:02:36.248318" elapsed="0.000025"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2026-04-02T09:51:06.094916" elapsed="0.000023"/>
+<status status="NOT RUN" start="2026-04-02T10:02:36.248426" elapsed="0.000023"/>
 </kw>
-<status status="FAIL" start="2026-04-02T09:51:05.949373" elapsed="0.145721">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x55f2770c1252 &lt;unknown&gt;
-#1 0x55f276a91226 &lt;unknown&gt;
-#2 0x55f276ace100 &lt;unknown&gt;
-#3 0x55f276ac7fb3 &lt;unknown&gt;
-#4 0x55f276b1766c &lt;unknown&gt;
-#5 0x55f276b16dbd &lt;unknown&gt;
-#6 0x55f276b07fa7 &lt;unknown&gt;
-#7 0x55f276ad5de2 &lt;unknown&gt;
-#8 0x55f276ad6c55 &lt;unknown&gt;
-#9 0x55f277084ee4 &lt;unknown&gt;
-#10 0x55f277088236 &lt;unknown&gt;
-#11 0x55f277087cee &lt;unknown&gt;
-#12 0x55f2770886a9 &lt;unknown&gt;
-#13 0x55f2770746ea &lt;unknown&gt;
-#14 0x55f277088a2a &lt;unknown&gt;
-#15 0x55f27705d359 &lt;unknown&gt;
-#16 0x55f2770adf79 &lt;unknown&gt;
-#17 0x55f2770ae16d &lt;unknown&gt;
-#18 0x55f2770bfc8e &lt;unknown&gt;
-#19 0x7fa262180b7b &lt;unknown&gt;
-</status>
+<status status="FAIL" start="2026-04-02T10:02:36.246145" elapsed="0.002438">ValueError: chromeoptions=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage"),add_argument("--disable-gpu"),add_argument("--disable-software-rasterizer") is not a supported browser.</status>
 </test>
-<status status="FAIL" start="2026-04-02T09:51:05.946460" elapsed="0.148976"/>
+<status status="FAIL" start="2026-04-02T10:02:36.243409" elapsed="0.005507"/>
 </suite>
-<status status="FAIL" start="2026-04-02T09:51:05.468823" elapsed="0.627324"/>
+<status status="FAIL" start="2026-04-02T10:02:35.984877" elapsed="0.264710"/>
 </suite>
-<status status="FAIL" start="2026-04-02T09:51:04.164254" elapsed="1.932399"/>
+<status status="FAIL" start="2026-04-02T10:02:34.933140" elapsed="1.316939"/>
 </suite>
 <statistics>
 <total>
