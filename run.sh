@@ -1,3 +1,3 @@
 #!/bin/bash
 export PYTHONPATH=$(pwd)
-poetry run robot --outputdir /tests/reports tests/api
+poetry run robot --outputdir /tests/reports tests/
