@@ -2,6 +2,9 @@
 set -e
 export PYTHONPATH=$(pwd)
 
+google-chrome --version || chromium --version
+chromedriver --version
+
 poetry run robot \
   --variable CHROME_OPTS:"\--headless=new 
                           \--no-sandbox 
@@ -12,5 +15,4 @@ poetry run robot \
   --outputdir /tests/reports \
   tests
 
-google-chrome --version || chromium --version
-chromedriver --version
+
