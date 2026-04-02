@@ -1,515 +1,515 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T12:24:46.181850" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T12:36:33.370400" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/tests/tests">
 <suite id="s1-s1" name="Api" source="/tests/tests/api">
 <suite id="s1-s1-s1" name="User Api Tests" source="/tests/tests/api/user_api_tests.robot">
 <test id="s1-s1-s1-t1" name="Login API" line="8">
 <kw name="API Login" owner="api_keywords">
 <kw name="Login" owner="CustomAPI">
-<msg time="2026-04-02T12:24:47.231778" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzk4ODcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.T8gk4xDmrejlCMtaCQQdJwKnc4FLcoEbG-pmmGG2...</msg>
+<msg time="2026-04-02T12:36:34.123442" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxNDA1OTQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.e-1k7d2ejzbHe1k6Pns84JqFg3-qv-V9XFJ3sOCq...</msg>
 <var>${result}</var>
 <arg>${user}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-04-02T12:24:46.796083" elapsed="0.435748"/>
+<status status="PASS" start="2026-04-02T12:36:33.715541" elapsed="0.407958"/>
 </kw>
 <return>
 <value>${result}</value>
-<status status="PASS" start="2026-04-02T12:24:47.231910" elapsed="0.000083"/>
+<status status="PASS" start="2026-04-02T12:36:34.123584" elapsed="0.000057"/>
 </return>
-<msg time="2026-04-02T12:24:47.232145" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzk4ODcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.T8gk4xDmrejlCMtaCQQdJwKnc4FLcoEbG-pmmGG2...</msg>
+<msg time="2026-04-02T12:36:34.123790" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxNDA1OTQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.e-1k7d2ejzbHe1k6Pns84JqFg3-qv-V9XFJ3sOCq...</msg>
 <var>${token}</var>
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="PASS" start="2026-04-02T12:24:46.795401" elapsed="0.436766"/>
+<status status="PASS" start="2026-04-02T12:36:33.714824" elapsed="0.408990"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T12:24:47.232738" level="INFO">Length is 2.</msg>
+<msg time="2026-04-02T12:36:34.124481" level="INFO">Length is 2.</msg>
 <arg>${token}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T12:24:47.232290" elapsed="0.000488"/>
+<status status="PASS" start="2026-04-02T12:36:34.123957" elapsed="0.000568"/>
 </kw>
-<status status="PASS" start="2026-04-02T12:24:46.794679" elapsed="0.438201"/>
+<status status="PASS" start="2026-04-02T12:36:33.714049" elapsed="0.410586"/>
 </test>
 <test id="s1-s1-s1-t2" name="Get Authenticate List" line="12">
 <kw name="API Get Auth" owner="api_keywords">
 <kw name="Get Auth" owner="CustomAPI">
-<msg time="2026-04-02T12:24:47.697654" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzk4ODcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.T8gk4xDmrejlCMtaCQQdJwKnc4FLcoEbG-pmmGG22Zs']</msg>
+<msg time="2026-04-02T12:36:34.445211" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxNDA1OTQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.e-1k7d2ejzbHe1k6Pns84JqFg3-qv-V9XFJ3sOCqmmk']</msg>
 <var>${result}</var>
-<status status="PASS" start="2026-04-02T12:24:47.233785" elapsed="0.463909"/>
+<status status="PASS" start="2026-04-02T12:36:34.125583" elapsed="0.319680"/>
 </kw>
 <return>
 <value>${result}</value>
-<status status="PASS" start="2026-04-02T12:24:47.697754" elapsed="0.000048"/>
+<status status="PASS" start="2026-04-02T12:36:34.445344" elapsed="0.000062"/>
 </return>
-<msg time="2026-04-02T12:24:47.697924" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzk4ODcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.T8gk4xDmrejlCMtaCQQdJwKnc4FLcoEbG-pmmGG22Zs']</msg>
+<msg time="2026-04-02T12:36:34.445586" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxNDA1OTQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.e-1k7d2ejzbHe1k6Pns84JqFg3-qv-V9XFJ3sOCqmmk']</msg>
 <var>${list}</var>
-<status status="PASS" start="2026-04-02T12:24:47.233584" elapsed="0.464388"/>
+<status status="PASS" start="2026-04-02T12:36:34.125379" elapsed="0.320236"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T12:24:47.698375" level="INFO">Length is 1.</msg>
+<msg time="2026-04-02T12:36:34.446081" level="INFO">Length is 1.</msg>
 <arg>${list}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T12:24:47.698082" elapsed="0.000327"/>
+<status status="PASS" start="2026-04-02T12:36:34.445747" elapsed="0.000374"/>
 </kw>
-<status status="PASS" start="2026-04-02T12:24:47.233112" elapsed="0.465387"/>
+<status status="PASS" start="2026-04-02T12:36:34.124869" elapsed="0.321354"/>
 </test>
-<status status="PASS" start="2026-04-02T12:24:46.232704" elapsed="1.466251"/>
+<status status="PASS" start="2026-04-02T12:36:33.426456" elapsed="1.020225"/>
 </suite>
-<status status="PASS" start="2026-04-02T12:24:46.231850" elapsed="1.467746"/>
+<status status="PASS" start="2026-04-02T12:36:33.425422" elapsed="1.021952"/>
 </suite>
 <suite id="s1-s2" name="Ui" source="/tests/tests/ui">
 <suite id="s1-s2-s1" name="Dashboard Tests" source="/tests/tests/ui/dashboard_tests.robot">
 <test id="s1-s2-s1-t1" name="Open Dashboard" line="10">
 <kw name="Open Browser To Application" owner="ui_keywords">
 <kw name="Chrome Ci Options" owner="browser_options">
-<msg time="2026-04-02T12:24:47.929108" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f0bf650fce0&gt;</msg>
+<msg time="2026-04-02T12:36:34.706544" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f1eeb7b3fb0&gt;</msg>
 <var>${options}</var>
-<status status="PASS" start="2026-04-02T12:24:47.928955" elapsed="0.000186"/>
+<status status="PASS" start="2026-04-02T12:36:34.706368" elapsed="0.000208"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-02T12:24:47.929503" level="INFO">Opening browser 'chrome' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
+<msg time="2026-04-02T12:36:34.707003" level="INFO">Opening browser 'chrome' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
 <arg>${LOGIN_URL}</arg>
 <arg>chrome</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-02T12:24:47.929270" elapsed="1.270826"/>
+<status status="PASS" start="2026-04-02T12:36:34.706725" elapsed="1.129133"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-02T12:24:49.200306" elapsed="0.015397"/>
+<status status="PASS" start="2026-04-02T12:36:35.836218" elapsed="0.016432"/>
 </kw>
-<status status="PASS" start="2026-04-02T12:24:47.928478" elapsed="1.287334"/>
+<status status="PASS" start="2026-04-02T12:36:34.705854" elapsed="1.146905"/>
 </kw>
 <kw name="Login With Credentials" owner="ui_keywords">
 <kw name="Input Username" owner="LoginPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-02T12:24:49.216934" level="INFO">Typing text 'admin' into text field 'id=UserName'.</msg>
+<msg time="2026-04-02T12:36:35.854008" level="INFO">Typing text 'admin' into text field 'id=UserName'.</msg>
 <arg>${USERNAME_FIELD}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-02T12:24:49.216596" elapsed="0.088840"/>
+<status status="PASS" start="2026-04-02T12:36:35.853639" elapsed="0.095885"/>
 </kw>
 <arg>${user}</arg>
-<status status="PASS" start="2026-04-02T12:24:49.216384" elapsed="0.089188"/>
+<status status="PASS" start="2026-04-02T12:36:35.853392" elapsed="0.096261"/>
 </kw>
 <kw name="Input Password" owner="LoginPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-02T12:24:49.306402" level="INFO">Typing text 'password' into text field 'id=Password'.</msg>
+<msg time="2026-04-02T12:36:35.950449" level="INFO">Typing text 'password' into text field 'id=Password'.</msg>
 <arg>${PASSWORD_FIELD}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-02T12:24:49.306129" elapsed="0.071303"/>
+<status status="PASS" start="2026-04-02T12:36:35.950220" elapsed="0.075211"/>
 </kw>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-04-02T12:24:49.305781" elapsed="0.071768"/>
+<status status="PASS" start="2026-04-02T12:36:35.949857" elapsed="0.075702"/>
 </kw>
 <kw name="Submit Login" owner="LoginPage">
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2026-04-02T12:24:49.378010" elapsed="0.281022"/>
+<status status="PASS" start="2026-04-02T12:36:36.026089" elapsed="0.272229"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${LOGIN_BUTTON}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-02T12:24:49.659227" elapsed="0.013402"/>
+<status status="PASS" start="2026-04-02T12:36:36.298519" elapsed="0.013983"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-04-02T12:24:49.673092" level="INFO">Clicking element 'xpath=//button[text()='Sign In']'.</msg>
-<msg time="2026-04-02T12:24:50.819296" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-02T12:24:50.819497" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
+<msg time="2026-04-02T12:36:36.312858" level="INFO">Clicking element 'xpath=//button[text()='Sign In']'.</msg>
+<msg time="2026-04-02T12:36:37.492877" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-02T12:36:37.493117" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
   (Session info: chrome=146.0.7680.164); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
 Stacktrace:
-#0 0x55d5de695252 &lt;unknown&gt;
-#1 0x55d5de065226 &lt;unknown&gt;
-#2 0x55d5de0bde55 &lt;unknown&gt;
-#3 0x55d5de0bbcad &lt;unknown&gt;
-#4 0x55d5de0b9189 &lt;unknown&gt;
-#5 0x55d5de0b88c4 &lt;unknown&gt;
-#6 0x55d5de0ac188 &lt;unknown&gt;
-#7 0x55d5de0dc206 &lt;unknown&gt;
-#8 0x55d5de0ab972 &lt;unknown&gt;
-#9 0x55d5de0dc572 &lt;unknown&gt;
-#10 0x55d5de0fe7d1 &lt;unknown&gt;
-#11 0x55d5de0dbfa7 &lt;unknown&gt;
-#12 0x55d5de0a9de2 &lt;unknown&gt;
-#13 0x55d5de0aac55 &lt;unknown&gt;
-#14 0x55d5de658ee4 &lt;unknown&gt;
-#15 0x55d5de65c236 &lt;unknown&gt;
-#16 0x55d5de65bcee &lt;unknown&gt;
-#17 0x55d5de65c6a9 &lt;unknown&gt;
-#18 0x55d5de6486ea &lt;unknown&gt;
-#19 0x55d5de65ca2a &lt;unknown&gt;
-#20 0x55d5de631359 &lt;unknown&gt;
-#21 0x55d5de681f79 &lt;unknown&gt;
-#22 0x55d5de68216d &lt;unknown&gt;
-#23 0x55d5de693c8e &lt;unknown&gt;
-#24 0x7f251e0f7b7b &lt;unknown&gt;
+#0 0x55ae9360f252 &lt;unknown&gt;
+#1 0x55ae92fdf226 &lt;unknown&gt;
+#2 0x55ae93037e55 &lt;unknown&gt;
+#3 0x55ae93035cad &lt;unknown&gt;
+#4 0x55ae93033189 &lt;unknown&gt;
+#5 0x55ae930328c4 &lt;unknown&gt;
+#6 0x55ae93026188 &lt;unknown&gt;
+#7 0x55ae93056206 &lt;unknown&gt;
+#8 0x55ae93025972 &lt;unknown&gt;
+#9 0x55ae93056572 &lt;unknown&gt;
+#10 0x55ae930787d1 &lt;unknown&gt;
+#11 0x55ae93055fa7 &lt;unknown&gt;
+#12 0x55ae93023de2 &lt;unknown&gt;
+#13 0x55ae93024c55 &lt;unknown&gt;
+#14 0x55ae935d2ee4 &lt;unknown&gt;
+#15 0x55ae935d6236 &lt;unknown&gt;
+#16 0x55ae935d5cee &lt;unknown&gt;
+#17 0x55ae935d66a9 &lt;unknown&gt;
+#18 0x55ae935c26ea &lt;unknown&gt;
+#19 0x55ae935d6a2a &lt;unknown&gt;
+#20 0x55ae935ab359 &lt;unknown&gt;
+#21 0x55ae935fbf79 &lt;unknown&gt;
+#22 0x55ae935fc16d &lt;unknown&gt;
+#23 0x55ae9360dc8e &lt;unknown&gt;
+#24 0x7f80839e7b7b &lt;unknown&gt;
 </msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2026-04-02T12:24:49.672824" elapsed="1.148074">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2026-04-02T12:36:36.312652" elapsed="1.182090">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
   (Session info: chrome=146.0.7680.164); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
 Stacktrace:
-#0 0x55d5de695252 &lt;unknown&gt;
-#1 0x55d5de065226 &lt;unknown&gt;
-#2 0x55d5de0bde55 &lt;unknown&gt;
-#3 0x55d5de0bbcad &lt;unknown&gt;
-#4 0x55d5de0b9189 &lt;unknown&gt;
-#5 0x55d5de0b88c4 &lt;unknown&gt;
-#6 0x55d5de0ac188 &lt;unknown&gt;
-#7 0x55d5de0dc206 &lt;unknown&gt;
-#8 0x55d5de0ab972 &lt;unknown&gt;
-#9 0x55d5de0dc572 &lt;unknown&gt;
-#10 0x55d5de0fe7d1 &lt;unknown&gt;
-#11 0x55d5de0dbfa7 &lt;unknown&gt;
-#12 0x55d5de0a9de2 &lt;unknown&gt;
-#13 0x55d5de0aac55 &lt;unknown&gt;
-#14 0x55d5de658ee4 &lt;unknown&gt;
-#15 0x55d5de65c236 &lt;unknown&gt;
-#16 0x55d5de65bcee &lt;unknown&gt;
-#17 0x55d5de65c6a9 &lt;unknown&gt;
-#18 0x55d5de6486ea &lt;unknown&gt;
-#19 0x55d5de65ca2a &lt;unknown&gt;
-#20 0x55d5de631359 &lt;unknown&gt;
-#21 0x55d5de681f79 &lt;unknown&gt;
-#22 0x55d5de68216d &lt;unknown&gt;
-#23 0x55d5de693c8e &lt;unknown&gt;
-#24 0x7f251e0f7b7b &lt;unknown&gt;
+#0 0x55ae9360f252 &lt;unknown&gt;
+#1 0x55ae92fdf226 &lt;unknown&gt;
+#2 0x55ae93037e55 &lt;unknown&gt;
+#3 0x55ae93035cad &lt;unknown&gt;
+#4 0x55ae93033189 &lt;unknown&gt;
+#5 0x55ae930328c4 &lt;unknown&gt;
+#6 0x55ae93026188 &lt;unknown&gt;
+#7 0x55ae93056206 &lt;unknown&gt;
+#8 0x55ae93025972 &lt;unknown&gt;
+#9 0x55ae93056572 &lt;unknown&gt;
+#10 0x55ae930787d1 &lt;unknown&gt;
+#11 0x55ae93055fa7 &lt;unknown&gt;
+#12 0x55ae93023de2 &lt;unknown&gt;
+#13 0x55ae93024c55 &lt;unknown&gt;
+#14 0x55ae935d2ee4 &lt;unknown&gt;
+#15 0x55ae935d6236 &lt;unknown&gt;
+#16 0x55ae935d5cee &lt;unknown&gt;
+#17 0x55ae935d66a9 &lt;unknown&gt;
+#18 0x55ae935c26ea &lt;unknown&gt;
+#19 0x55ae935d6a2a &lt;unknown&gt;
+#20 0x55ae935ab359 &lt;unknown&gt;
+#21 0x55ae935fbf79 &lt;unknown&gt;
+#22 0x55ae935fc16d &lt;unknown&gt;
+#23 0x55ae9360dc8e &lt;unknown&gt;
+#24 0x7f80839e7b7b &lt;unknown&gt;
 </status>
 </kw>
-<status status="FAIL" start="2026-04-02T12:24:49.377734" elapsed="1.443394">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2026-04-02T12:36:36.025775" elapsed="1.469163">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
   (Session info: chrome=146.0.7680.164); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
 Stacktrace:
-#0 0x55d5de695252 &lt;unknown&gt;
-#1 0x55d5de065226 &lt;unknown&gt;
-#2 0x55d5de0bde55 &lt;unknown&gt;
-#3 0x55d5de0bbcad &lt;unknown&gt;
-#4 0x55d5de0b9189 &lt;unknown&gt;
-#5 0x55d5de0b88c4 &lt;unknown&gt;
-#6 0x55d5de0ac188 &lt;unknown&gt;
-#7 0x55d5de0dc206 &lt;unknown&gt;
-#8 0x55d5de0ab972 &lt;unknown&gt;
-#9 0x55d5de0dc572 &lt;unknown&gt;
-#10 0x55d5de0fe7d1 &lt;unknown&gt;
-#11 0x55d5de0dbfa7 &lt;unknown&gt;
-#12 0x55d5de0a9de2 &lt;unknown&gt;
-#13 0x55d5de0aac55 &lt;unknown&gt;
-#14 0x55d5de658ee4 &lt;unknown&gt;
-#15 0x55d5de65c236 &lt;unknown&gt;
-#16 0x55d5de65bcee &lt;unknown&gt;
-#17 0x55d5de65c6a9 &lt;unknown&gt;
-#18 0x55d5de6486ea &lt;unknown&gt;
-#19 0x55d5de65ca2a &lt;unknown&gt;
-#20 0x55d5de631359 &lt;unknown&gt;
-#21 0x55d5de681f79 &lt;unknown&gt;
-#22 0x55d5de68216d &lt;unknown&gt;
-#23 0x55d5de693c8e &lt;unknown&gt;
-#24 0x7f251e0f7b7b &lt;unknown&gt;
+#0 0x55ae9360f252 &lt;unknown&gt;
+#1 0x55ae92fdf226 &lt;unknown&gt;
+#2 0x55ae93037e55 &lt;unknown&gt;
+#3 0x55ae93035cad &lt;unknown&gt;
+#4 0x55ae93033189 &lt;unknown&gt;
+#5 0x55ae930328c4 &lt;unknown&gt;
+#6 0x55ae93026188 &lt;unknown&gt;
+#7 0x55ae93056206 &lt;unknown&gt;
+#8 0x55ae93025972 &lt;unknown&gt;
+#9 0x55ae93056572 &lt;unknown&gt;
+#10 0x55ae930787d1 &lt;unknown&gt;
+#11 0x55ae93055fa7 &lt;unknown&gt;
+#12 0x55ae93023de2 &lt;unknown&gt;
+#13 0x55ae93024c55 &lt;unknown&gt;
+#14 0x55ae935d2ee4 &lt;unknown&gt;
+#15 0x55ae935d6236 &lt;unknown&gt;
+#16 0x55ae935d5cee &lt;unknown&gt;
+#17 0x55ae935d66a9 &lt;unknown&gt;
+#18 0x55ae935c26ea &lt;unknown&gt;
+#19 0x55ae935d6a2a &lt;unknown&gt;
+#20 0x55ae935ab359 &lt;unknown&gt;
+#21 0x55ae935fbf79 &lt;unknown&gt;
+#22 0x55ae935fc16d &lt;unknown&gt;
+#23 0x55ae9360dc8e &lt;unknown&gt;
+#24 0x7f80839e7b7b &lt;unknown&gt;
 </status>
 </kw>
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="FAIL" start="2026-04-02T12:24:49.216041" elapsed="1.605195">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2026-04-02T12:36:35.852975" elapsed="1.642108">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
   (Session info: chrome=146.0.7680.164); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
 Stacktrace:
-#0 0x55d5de695252 &lt;unknown&gt;
-#1 0x55d5de065226 &lt;unknown&gt;
-#2 0x55d5de0bde55 &lt;unknown&gt;
-#3 0x55d5de0bbcad &lt;unknown&gt;
-#4 0x55d5de0b9189 &lt;unknown&gt;
-#5 0x55d5de0b88c4 &lt;unknown&gt;
-#6 0x55d5de0ac188 &lt;unknown&gt;
-#7 0x55d5de0dc206 &lt;unknown&gt;
-#8 0x55d5de0ab972 &lt;unknown&gt;
-#9 0x55d5de0dc572 &lt;unknown&gt;
-#10 0x55d5de0fe7d1 &lt;unknown&gt;
-#11 0x55d5de0dbfa7 &lt;unknown&gt;
-#12 0x55d5de0a9de2 &lt;unknown&gt;
-#13 0x55d5de0aac55 &lt;unknown&gt;
-#14 0x55d5de658ee4 &lt;unknown&gt;
-#15 0x55d5de65c236 &lt;unknown&gt;
-#16 0x55d5de65bcee &lt;unknown&gt;
-#17 0x55d5de65c6a9 &lt;unknown&gt;
-#18 0x55d5de6486ea &lt;unknown&gt;
-#19 0x55d5de65ca2a &lt;unknown&gt;
-#20 0x55d5de631359 &lt;unknown&gt;
-#21 0x55d5de681f79 &lt;unknown&gt;
-#22 0x55d5de68216d &lt;unknown&gt;
-#23 0x55d5de693c8e &lt;unknown&gt;
-#24 0x7f251e0f7b7b &lt;unknown&gt;
+#0 0x55ae9360f252 &lt;unknown&gt;
+#1 0x55ae92fdf226 &lt;unknown&gt;
+#2 0x55ae93037e55 &lt;unknown&gt;
+#3 0x55ae93035cad &lt;unknown&gt;
+#4 0x55ae93033189 &lt;unknown&gt;
+#5 0x55ae930328c4 &lt;unknown&gt;
+#6 0x55ae93026188 &lt;unknown&gt;
+#7 0x55ae93056206 &lt;unknown&gt;
+#8 0x55ae93025972 &lt;unknown&gt;
+#9 0x55ae93056572 &lt;unknown&gt;
+#10 0x55ae930787d1 &lt;unknown&gt;
+#11 0x55ae93055fa7 &lt;unknown&gt;
+#12 0x55ae93023de2 &lt;unknown&gt;
+#13 0x55ae93024c55 &lt;unknown&gt;
+#14 0x55ae935d2ee4 &lt;unknown&gt;
+#15 0x55ae935d6236 &lt;unknown&gt;
+#16 0x55ae935d5cee &lt;unknown&gt;
+#17 0x55ae935d66a9 &lt;unknown&gt;
+#18 0x55ae935c26ea &lt;unknown&gt;
+#19 0x55ae935d6a2a &lt;unknown&gt;
+#20 0x55ae935ab359 &lt;unknown&gt;
+#21 0x55ae935fbf79 &lt;unknown&gt;
+#22 0x55ae935fc16d &lt;unknown&gt;
+#23 0x55ae9360dc8e &lt;unknown&gt;
+#24 0x7f80839e7b7b &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Open Dashboard" owner="DashboardPage">
-<status status="NOT RUN" start="2026-04-02T12:24:50.821436" elapsed="0.000033"/>
+<status status="NOT RUN" start="2026-04-02T12:36:37.495293" elapsed="0.000037"/>
 </kw>
 <kw name="Dashboard Should Be Visible" owner="DashboardPage">
-<status status="NOT RUN" start="2026-04-02T12:24:50.821563" elapsed="0.000027"/>
+<status status="NOT RUN" start="2026-04-02T12:36:37.495439" elapsed="0.000027"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2026-04-02T12:24:50.821684" elapsed="0.000860"/>
+<status status="NOT RUN" start="2026-04-02T12:36:37.495568" elapsed="0.000952"/>
 </kw>
-<status status="FAIL" start="2026-04-02T12:24:47.927972" elapsed="2.894993">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2026-04-02T12:36:34.705311" elapsed="2.791550">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
   (Session info: chrome=146.0.7680.164); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
 Stacktrace:
-#0 0x55d5de695252 &lt;unknown&gt;
-#1 0x55d5de065226 &lt;unknown&gt;
-#2 0x55d5de0bde55 &lt;unknown&gt;
-#3 0x55d5de0bbcad &lt;unknown&gt;
-#4 0x55d5de0b9189 &lt;unknown&gt;
-#5 0x55d5de0b88c4 &lt;unknown&gt;
-#6 0x55d5de0ac188 &lt;unknown&gt;
-#7 0x55d5de0dc206 &lt;unknown&gt;
-#8 0x55d5de0ab972 &lt;unknown&gt;
-#9 0x55d5de0dc572 &lt;unknown&gt;
-#10 0x55d5de0fe7d1 &lt;unknown&gt;
-#11 0x55d5de0dbfa7 &lt;unknown&gt;
-#12 0x55d5de0a9de2 &lt;unknown&gt;
-#13 0x55d5de0aac55 &lt;unknown&gt;
-#14 0x55d5de658ee4 &lt;unknown&gt;
-#15 0x55d5de65c236 &lt;unknown&gt;
-#16 0x55d5de65bcee &lt;unknown&gt;
-#17 0x55d5de65c6a9 &lt;unknown&gt;
-#18 0x55d5de6486ea &lt;unknown&gt;
-#19 0x55d5de65ca2a &lt;unknown&gt;
-#20 0x55d5de631359 &lt;unknown&gt;
-#21 0x55d5de681f79 &lt;unknown&gt;
-#22 0x55d5de68216d &lt;unknown&gt;
-#23 0x55d5de693c8e &lt;unknown&gt;
-#24 0x7f251e0f7b7b &lt;unknown&gt;
+#0 0x55ae9360f252 &lt;unknown&gt;
+#1 0x55ae92fdf226 &lt;unknown&gt;
+#2 0x55ae93037e55 &lt;unknown&gt;
+#3 0x55ae93035cad &lt;unknown&gt;
+#4 0x55ae93033189 &lt;unknown&gt;
+#5 0x55ae930328c4 &lt;unknown&gt;
+#6 0x55ae93026188 &lt;unknown&gt;
+#7 0x55ae93056206 &lt;unknown&gt;
+#8 0x55ae93025972 &lt;unknown&gt;
+#9 0x55ae93056572 &lt;unknown&gt;
+#10 0x55ae930787d1 &lt;unknown&gt;
+#11 0x55ae93055fa7 &lt;unknown&gt;
+#12 0x55ae93023de2 &lt;unknown&gt;
+#13 0x55ae93024c55 &lt;unknown&gt;
+#14 0x55ae935d2ee4 &lt;unknown&gt;
+#15 0x55ae935d6236 &lt;unknown&gt;
+#16 0x55ae935d5cee &lt;unknown&gt;
+#17 0x55ae935d66a9 &lt;unknown&gt;
+#18 0x55ae935c26ea &lt;unknown&gt;
+#19 0x55ae935d6a2a &lt;unknown&gt;
+#20 0x55ae935ab359 &lt;unknown&gt;
+#21 0x55ae935fbf79 &lt;unknown&gt;
+#22 0x55ae935fc16d &lt;unknown&gt;
+#23 0x55ae9360dc8e &lt;unknown&gt;
+#24 0x7f80839e7b7b &lt;unknown&gt;
 </status>
 </test>
-<status status="FAIL" start="2026-04-02T12:24:47.700911" elapsed="3.122478"/>
+<status status="FAIL" start="2026-04-02T12:36:34.448817" elapsed="3.048441"/>
 </suite>
 <suite id="s1-s2-s2" name="Login Tests" source="/tests/tests/ui/login_tests.robot">
 <test id="s1-s2-s2-t1" name="Valid Login" line="9">
 <kw name="Open Browser To Application" owner="ui_keywords">
 <kw name="Chrome Ci Options" owner="browser_options">
-<msg time="2026-04-02T12:24:50.828004" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f0bf6522f00&gt;</msg>
+<msg time="2026-04-02T12:36:37.501832" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f1eeb647020&gt;</msg>
 <var>${options}</var>
-<status status="PASS" start="2026-04-02T12:24:50.827866" elapsed="0.000165"/>
+<status status="PASS" start="2026-04-02T12:36:37.501700" elapsed="0.000160"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-02T12:24:50.828372" level="INFO">Opening browser 'chrome' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
+<msg time="2026-04-02T12:36:37.502238" level="INFO">Opening browser 'chrome' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
 <arg>${LOGIN_URL}</arg>
 <arg>chrome</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-02T12:24:50.828143" elapsed="0.800895"/>
+<status status="PASS" start="2026-04-02T12:36:37.501976" elapsed="0.938948"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-02T12:24:51.629229" elapsed="0.016340"/>
+<status status="PASS" start="2026-04-02T12:36:38.441190" elapsed="0.016374"/>
 </kw>
-<status status="PASS" start="2026-04-02T12:24:50.827657" elapsed="0.818049"/>
+<status status="PASS" start="2026-04-02T12:36:37.501485" elapsed="0.956239"/>
 </kw>
 <kw name="Login With Credentials" owner="ui_keywords">
 <kw name="Input Username" owner="LoginPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-02T12:24:51.646683" level="INFO">Typing text 'admin' into text field 'id=UserName'.</msg>
+<msg time="2026-04-02T12:36:38.458822" level="INFO">Typing text 'admin' into text field 'id=UserName'.</msg>
 <arg>${USERNAME_FIELD}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-02T12:24:51.646481" elapsed="0.084862"/>
+<status status="PASS" start="2026-04-02T12:36:38.458591" elapsed="0.097830"/>
 </kw>
 <arg>${user}</arg>
-<status status="PASS" start="2026-04-02T12:24:51.646262" elapsed="0.085192"/>
+<status status="PASS" start="2026-04-02T12:36:38.458345" elapsed="0.098201"/>
 </kw>
 <kw name="Input Password" owner="LoginPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-02T12:24:51.732167" level="INFO">Typing text 'password' into text field 'id=Password'.</msg>
+<msg time="2026-04-02T12:36:38.557321" level="INFO">Typing text 'password' into text field 'id=Password'.</msg>
 <arg>${PASSWORD_FIELD}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-02T12:24:51.731918" elapsed="0.068210"/>
+<status status="PASS" start="2026-04-02T12:36:38.557091" elapsed="0.077263"/>
 </kw>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-04-02T12:24:51.731626" elapsed="0.068616"/>
+<status status="PASS" start="2026-04-02T12:36:38.556746" elapsed="0.077731"/>
 </kw>
 <kw name="Submit Login" owner="LoginPage">
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2026-04-02T12:24:51.800661" elapsed="0.274260"/>
+<status status="PASS" start="2026-04-02T12:36:38.634949" elapsed="0.279131"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${LOGIN_BUTTON}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-02T12:24:52.075136" elapsed="0.012854"/>
+<status status="PASS" start="2026-04-02T12:36:38.914286" elapsed="0.013971"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-04-02T12:24:52.088378" level="INFO">Clicking element 'xpath=//button[text()='Sign In']'.</msg>
-<msg time="2026-04-02T12:24:53.218003" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-02T12:24:53.218178" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
+<msg time="2026-04-02T12:36:38.928658" level="INFO">Clicking element 'xpath=//button[text()='Sign In']'.</msg>
+<msg time="2026-04-02T12:36:40.060956" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-02T12:36:40.061222" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
   (Session info: chrome=146.0.7680.164); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
 Stacktrace:
-#0 0x561fbc291252 &lt;unknown&gt;
-#1 0x561fbbc61226 &lt;unknown&gt;
-#2 0x561fbbcb9e55 &lt;unknown&gt;
-#3 0x561fbbcb7cad &lt;unknown&gt;
-#4 0x561fbbcb5189 &lt;unknown&gt;
-#5 0x561fbbcb48c4 &lt;unknown&gt;
-#6 0x561fbbca8188 &lt;unknown&gt;
-#7 0x561fbbcd8206 &lt;unknown&gt;
-#8 0x561fbbca7972 &lt;unknown&gt;
-#9 0x561fbbcd8572 &lt;unknown&gt;
-#10 0x561fbbcfa7d1 &lt;unknown&gt;
-#11 0x561fbbcd7fa7 &lt;unknown&gt;
-#12 0x561fbbca5de2 &lt;unknown&gt;
-#13 0x561fbbca6c55 &lt;unknown&gt;
-#14 0x561fbc254ee4 &lt;unknown&gt;
-#15 0x561fbc258236 &lt;unknown&gt;
-#16 0x561fbc257cee &lt;unknown&gt;
-#17 0x561fbc2586a9 &lt;unknown&gt;
-#18 0x561fbc2446ea &lt;unknown&gt;
-#19 0x561fbc258a2a &lt;unknown&gt;
-#20 0x561fbc22d359 &lt;unknown&gt;
-#21 0x561fbc27df79 &lt;unknown&gt;
-#22 0x561fbc27e16d &lt;unknown&gt;
-#23 0x561fbc28fc8e &lt;unknown&gt;
-#24 0x7f989ec80b7b &lt;unknown&gt;
+#0 0x55c64aedf252 &lt;unknown&gt;
+#1 0x55c64a8af226 &lt;unknown&gt;
+#2 0x55c64a907e55 &lt;unknown&gt;
+#3 0x55c64a905cad &lt;unknown&gt;
+#4 0x55c64a903189 &lt;unknown&gt;
+#5 0x55c64a9028c4 &lt;unknown&gt;
+#6 0x55c64a8f6188 &lt;unknown&gt;
+#7 0x55c64a926206 &lt;unknown&gt;
+#8 0x55c64a8f5972 &lt;unknown&gt;
+#9 0x55c64a926572 &lt;unknown&gt;
+#10 0x55c64a9487d1 &lt;unknown&gt;
+#11 0x55c64a925fa7 &lt;unknown&gt;
+#12 0x55c64a8f3de2 &lt;unknown&gt;
+#13 0x55c64a8f4c55 &lt;unknown&gt;
+#14 0x55c64aea2ee4 &lt;unknown&gt;
+#15 0x55c64aea6236 &lt;unknown&gt;
+#16 0x55c64aea5cee &lt;unknown&gt;
+#17 0x55c64aea66a9 &lt;unknown&gt;
+#18 0x55c64ae926ea &lt;unknown&gt;
+#19 0x55c64aea6a2a &lt;unknown&gt;
+#20 0x55c64ae7b359 &lt;unknown&gt;
+#21 0x55c64aecbf79 &lt;unknown&gt;
+#22 0x55c64aecc16d &lt;unknown&gt;
+#23 0x55c64aeddc8e &lt;unknown&gt;
+#24 0x7f3e8bca0b7b &lt;unknown&gt;
 </msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2026-04-02T12:24:52.088161" elapsed="1.130555">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2026-04-02T12:36:38.928426" elapsed="1.133408">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
   (Session info: chrome=146.0.7680.164); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
 Stacktrace:
-#0 0x561fbc291252 &lt;unknown&gt;
-#1 0x561fbbc61226 &lt;unknown&gt;
-#2 0x561fbbcb9e55 &lt;unknown&gt;
-#3 0x561fbbcb7cad &lt;unknown&gt;
-#4 0x561fbbcb5189 &lt;unknown&gt;
-#5 0x561fbbcb48c4 &lt;unknown&gt;
-#6 0x561fbbca8188 &lt;unknown&gt;
-#7 0x561fbbcd8206 &lt;unknown&gt;
-#8 0x561fbbca7972 &lt;unknown&gt;
-#9 0x561fbbcd8572 &lt;unknown&gt;
-#10 0x561fbbcfa7d1 &lt;unknown&gt;
-#11 0x561fbbcd7fa7 &lt;unknown&gt;
-#12 0x561fbbca5de2 &lt;unknown&gt;
-#13 0x561fbbca6c55 &lt;unknown&gt;
-#14 0x561fbc254ee4 &lt;unknown&gt;
-#15 0x561fbc258236 &lt;unknown&gt;
-#16 0x561fbc257cee &lt;unknown&gt;
-#17 0x561fbc2586a9 &lt;unknown&gt;
-#18 0x561fbc2446ea &lt;unknown&gt;
-#19 0x561fbc258a2a &lt;unknown&gt;
-#20 0x561fbc22d359 &lt;unknown&gt;
-#21 0x561fbc27df79 &lt;unknown&gt;
-#22 0x561fbc27e16d &lt;unknown&gt;
-#23 0x561fbc28fc8e &lt;unknown&gt;
-#24 0x7f989ec80b7b &lt;unknown&gt;
+#0 0x55c64aedf252 &lt;unknown&gt;
+#1 0x55c64a8af226 &lt;unknown&gt;
+#2 0x55c64a907e55 &lt;unknown&gt;
+#3 0x55c64a905cad &lt;unknown&gt;
+#4 0x55c64a903189 &lt;unknown&gt;
+#5 0x55c64a9028c4 &lt;unknown&gt;
+#6 0x55c64a8f6188 &lt;unknown&gt;
+#7 0x55c64a926206 &lt;unknown&gt;
+#8 0x55c64a8f5972 &lt;unknown&gt;
+#9 0x55c64a926572 &lt;unknown&gt;
+#10 0x55c64a9487d1 &lt;unknown&gt;
+#11 0x55c64a925fa7 &lt;unknown&gt;
+#12 0x55c64a8f3de2 &lt;unknown&gt;
+#13 0x55c64a8f4c55 &lt;unknown&gt;
+#14 0x55c64aea2ee4 &lt;unknown&gt;
+#15 0x55c64aea6236 &lt;unknown&gt;
+#16 0x55c64aea5cee &lt;unknown&gt;
+#17 0x55c64aea66a9 &lt;unknown&gt;
+#18 0x55c64ae926ea &lt;unknown&gt;
+#19 0x55c64aea6a2a &lt;unknown&gt;
+#20 0x55c64ae7b359 &lt;unknown&gt;
+#21 0x55c64aecbf79 &lt;unknown&gt;
+#22 0x55c64aecc16d &lt;unknown&gt;
+#23 0x55c64aeddc8e &lt;unknown&gt;
+#24 0x7f3e8bca0b7b &lt;unknown&gt;
 </status>
 </kw>
-<status status="FAIL" start="2026-04-02T12:24:51.800418" elapsed="1.418460">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2026-04-02T12:36:38.634677" elapsed="1.427333">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
   (Session info: chrome=146.0.7680.164); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
 Stacktrace:
-#0 0x561fbc291252 &lt;unknown&gt;
-#1 0x561fbbc61226 &lt;unknown&gt;
-#2 0x561fbbcb9e55 &lt;unknown&gt;
-#3 0x561fbbcb7cad &lt;unknown&gt;
-#4 0x561fbbcb5189 &lt;unknown&gt;
-#5 0x561fbbcb48c4 &lt;unknown&gt;
-#6 0x561fbbca8188 &lt;unknown&gt;
-#7 0x561fbbcd8206 &lt;unknown&gt;
-#8 0x561fbbca7972 &lt;unknown&gt;
-#9 0x561fbbcd8572 &lt;unknown&gt;
-#10 0x561fbbcfa7d1 &lt;unknown&gt;
-#11 0x561fbbcd7fa7 &lt;unknown&gt;
-#12 0x561fbbca5de2 &lt;unknown&gt;
-#13 0x561fbbca6c55 &lt;unknown&gt;
-#14 0x561fbc254ee4 &lt;unknown&gt;
-#15 0x561fbc258236 &lt;unknown&gt;
-#16 0x561fbc257cee &lt;unknown&gt;
-#17 0x561fbc2586a9 &lt;unknown&gt;
-#18 0x561fbc2446ea &lt;unknown&gt;
-#19 0x561fbc258a2a &lt;unknown&gt;
-#20 0x561fbc22d359 &lt;unknown&gt;
-#21 0x561fbc27df79 &lt;unknown&gt;
-#22 0x561fbc27e16d &lt;unknown&gt;
-#23 0x561fbc28fc8e &lt;unknown&gt;
-#24 0x7f989ec80b7b &lt;unknown&gt;
+#0 0x55c64aedf252 &lt;unknown&gt;
+#1 0x55c64a8af226 &lt;unknown&gt;
+#2 0x55c64a907e55 &lt;unknown&gt;
+#3 0x55c64a905cad &lt;unknown&gt;
+#4 0x55c64a903189 &lt;unknown&gt;
+#5 0x55c64a9028c4 &lt;unknown&gt;
+#6 0x55c64a8f6188 &lt;unknown&gt;
+#7 0x55c64a926206 &lt;unknown&gt;
+#8 0x55c64a8f5972 &lt;unknown&gt;
+#9 0x55c64a926572 &lt;unknown&gt;
+#10 0x55c64a9487d1 &lt;unknown&gt;
+#11 0x55c64a925fa7 &lt;unknown&gt;
+#12 0x55c64a8f3de2 &lt;unknown&gt;
+#13 0x55c64a8f4c55 &lt;unknown&gt;
+#14 0x55c64aea2ee4 &lt;unknown&gt;
+#15 0x55c64aea6236 &lt;unknown&gt;
+#16 0x55c64aea5cee &lt;unknown&gt;
+#17 0x55c64aea66a9 &lt;unknown&gt;
+#18 0x55c64ae926ea &lt;unknown&gt;
+#19 0x55c64aea6a2a &lt;unknown&gt;
+#20 0x55c64ae7b359 &lt;unknown&gt;
+#21 0x55c64aecbf79 &lt;unknown&gt;
+#22 0x55c64aecc16d &lt;unknown&gt;
+#23 0x55c64aeddc8e &lt;unknown&gt;
+#24 0x7f3e8bca0b7b &lt;unknown&gt;
 </status>
 </kw>
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="FAIL" start="2026-04-02T12:24:51.645908" elapsed="1.573082">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2026-04-02T12:36:38.457940" elapsed="1.604214">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
   (Session info: chrome=146.0.7680.164); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
 Stacktrace:
-#0 0x561fbc291252 &lt;unknown&gt;
-#1 0x561fbbc61226 &lt;unknown&gt;
-#2 0x561fbbcb9e55 &lt;unknown&gt;
-#3 0x561fbbcb7cad &lt;unknown&gt;
-#4 0x561fbbcb5189 &lt;unknown&gt;
-#5 0x561fbbcb48c4 &lt;unknown&gt;
-#6 0x561fbbca8188 &lt;unknown&gt;
-#7 0x561fbbcd8206 &lt;unknown&gt;
-#8 0x561fbbca7972 &lt;unknown&gt;
-#9 0x561fbbcd8572 &lt;unknown&gt;
-#10 0x561fbbcfa7d1 &lt;unknown&gt;
-#11 0x561fbbcd7fa7 &lt;unknown&gt;
-#12 0x561fbbca5de2 &lt;unknown&gt;
-#13 0x561fbbca6c55 &lt;unknown&gt;
-#14 0x561fbc254ee4 &lt;unknown&gt;
-#15 0x561fbc258236 &lt;unknown&gt;
-#16 0x561fbc257cee &lt;unknown&gt;
-#17 0x561fbc2586a9 &lt;unknown&gt;
-#18 0x561fbc2446ea &lt;unknown&gt;
-#19 0x561fbc258a2a &lt;unknown&gt;
-#20 0x561fbc22d359 &lt;unknown&gt;
-#21 0x561fbc27df79 &lt;unknown&gt;
-#22 0x561fbc27e16d &lt;unknown&gt;
-#23 0x561fbc28fc8e &lt;unknown&gt;
-#24 0x7f989ec80b7b &lt;unknown&gt;
+#0 0x55c64aedf252 &lt;unknown&gt;
+#1 0x55c64a8af226 &lt;unknown&gt;
+#2 0x55c64a907e55 &lt;unknown&gt;
+#3 0x55c64a905cad &lt;unknown&gt;
+#4 0x55c64a903189 &lt;unknown&gt;
+#5 0x55c64a9028c4 &lt;unknown&gt;
+#6 0x55c64a8f6188 &lt;unknown&gt;
+#7 0x55c64a926206 &lt;unknown&gt;
+#8 0x55c64a8f5972 &lt;unknown&gt;
+#9 0x55c64a926572 &lt;unknown&gt;
+#10 0x55c64a9487d1 &lt;unknown&gt;
+#11 0x55c64a925fa7 &lt;unknown&gt;
+#12 0x55c64a8f3de2 &lt;unknown&gt;
+#13 0x55c64a8f4c55 &lt;unknown&gt;
+#14 0x55c64aea2ee4 &lt;unknown&gt;
+#15 0x55c64aea6236 &lt;unknown&gt;
+#16 0x55c64aea5cee &lt;unknown&gt;
+#17 0x55c64aea66a9 &lt;unknown&gt;
+#18 0x55c64ae926ea &lt;unknown&gt;
+#19 0x55c64aea6a2a &lt;unknown&gt;
+#20 0x55c64ae7b359 &lt;unknown&gt;
+#21 0x55c64aecbf79 &lt;unknown&gt;
+#22 0x55c64aecc16d &lt;unknown&gt;
+#23 0x55c64aeddc8e &lt;unknown&gt;
+#24 0x7f3e8bca0b7b &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
 <arg>Employee Management</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-04-02T12:24:53.219172" elapsed="0.000032"/>
+<status status="NOT RUN" start="2026-04-02T12:36:40.062357" elapsed="0.000038"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2026-04-02T12:24:53.219284" elapsed="0.000020"/>
+<status status="NOT RUN" start="2026-04-02T12:36:40.062487" elapsed="0.000023"/>
 </kw>
-<status status="FAIL" start="2026-04-02T12:24:50.827248" elapsed="2.392193">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2026-04-02T12:36:37.501048" elapsed="2.561601">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="submit" class="btn btn-signin"&gt;...&lt;/button&gt; is not clickable at point (280, 453). Other element would receive the click: &lt;div style="width: 100%; color: White; font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Arial, Helvetica, Verdana, sans-serif; font-size: 11pt;"&gt;...&lt;/div&gt;
   (Session info: chrome=146.0.7680.164); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
 Stacktrace:
-#0 0x561fbc291252 &lt;unknown&gt;
-#1 0x561fbbc61226 &lt;unknown&gt;
-#2 0x561fbbcb9e55 &lt;unknown&gt;
-#3 0x561fbbcb7cad &lt;unknown&gt;
-#4 0x561fbbcb5189 &lt;unknown&gt;
-#5 0x561fbbcb48c4 &lt;unknown&gt;
-#6 0x561fbbca8188 &lt;unknown&gt;
-#7 0x561fbbcd8206 &lt;unknown&gt;
-#8 0x561fbbca7972 &lt;unknown&gt;
-#9 0x561fbbcd8572 &lt;unknown&gt;
-#10 0x561fbbcfa7d1 &lt;unknown&gt;
-#11 0x561fbbcd7fa7 &lt;unknown&gt;
-#12 0x561fbbca5de2 &lt;unknown&gt;
-#13 0x561fbbca6c55 &lt;unknown&gt;
-#14 0x561fbc254ee4 &lt;unknown&gt;
-#15 0x561fbc258236 &lt;unknown&gt;
-#16 0x561fbc257cee &lt;unknown&gt;
-#17 0x561fbc2586a9 &lt;unknown&gt;
-#18 0x561fbc2446ea &lt;unknown&gt;
-#19 0x561fbc258a2a &lt;unknown&gt;
-#20 0x561fbc22d359 &lt;unknown&gt;
-#21 0x561fbc27df79 &lt;unknown&gt;
-#22 0x561fbc27e16d &lt;unknown&gt;
-#23 0x561fbc28fc8e &lt;unknown&gt;
-#24 0x7f989ec80b7b &lt;unknown&gt;
+#0 0x55c64aedf252 &lt;unknown&gt;
+#1 0x55c64a8af226 &lt;unknown&gt;
+#2 0x55c64a907e55 &lt;unknown&gt;
+#3 0x55c64a905cad &lt;unknown&gt;
+#4 0x55c64a903189 &lt;unknown&gt;
+#5 0x55c64a9028c4 &lt;unknown&gt;
+#6 0x55c64a8f6188 &lt;unknown&gt;
+#7 0x55c64a926206 &lt;unknown&gt;
+#8 0x55c64a8f5972 &lt;unknown&gt;
+#9 0x55c64a926572 &lt;unknown&gt;
+#10 0x55c64a9487d1 &lt;unknown&gt;
+#11 0x55c64a925fa7 &lt;unknown&gt;
+#12 0x55c64a8f3de2 &lt;unknown&gt;
+#13 0x55c64a8f4c55 &lt;unknown&gt;
+#14 0x55c64aea2ee4 &lt;unknown&gt;
+#15 0x55c64aea6236 &lt;unknown&gt;
+#16 0x55c64aea5cee &lt;unknown&gt;
+#17 0x55c64aea66a9 &lt;unknown&gt;
+#18 0x55c64ae926ea &lt;unknown&gt;
+#19 0x55c64aea6a2a &lt;unknown&gt;
+#20 0x55c64ae7b359 &lt;unknown&gt;
+#21 0x55c64aecbf79 &lt;unknown&gt;
+#22 0x55c64aecc16d &lt;unknown&gt;
+#23 0x55c64aeddc8e &lt;unknown&gt;
+#24 0x7f3e8bca0b7b &lt;unknown&gt;
 </status>
 </test>
-<status status="FAIL" start="2026-04-02T12:24:50.823966" elapsed="2.395807"/>
+<status status="FAIL" start="2026-04-02T12:36:37.497732" elapsed="2.565344"/>
 </suite>
-<status status="FAIL" start="2026-04-02T12:24:47.699958" elapsed="5.520421"/>
+<status status="FAIL" start="2026-04-02T12:36:34.447860" elapsed="5.615883"/>
 </suite>
-<status status="FAIL" start="2026-04-02T12:24:46.183161" elapsed="7.037717"/>
+<status status="FAIL" start="2026-04-02T12:36:33.371658" elapsed="6.692881"/>
 </suite>
 <statistics>
 <total>
