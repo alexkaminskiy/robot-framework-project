@@ -1,315 +1,235 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T10:17:35.607732" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T10:41:57.605599" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/tests/tests">
 <suite id="s1-s1" name="Api" source="/tests/tests/api">
 <suite id="s1-s1-s1" name="User Api Tests" source="/tests/tests/api/user_api_tests.robot">
 <test id="s1-s1-s1-t1" name="Login API" line="8">
 <kw name="API Login" owner="api_keywords">
 <kw name="Login" owner="CustomAPI">
-<msg time="2026-04-02T10:17:36.535098" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzIyNTYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.QSU57uSy0uGeP5lyMT-_eNFnIpOgUGpLheEyqeFH...</msg>
+<msg time="2026-04-02T10:42:00.816758" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzM3MjAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.CQsxcXYm8G61ASZjWWzwnt1x-CpSOOOxgth5oOhJ...</msg>
 <var>${result}</var>
 <arg>${user}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-04-02T10:17:36.109896" elapsed="0.425267"/>
+<status status="PASS" start="2026-04-02T10:42:00.453852" elapsed="0.362961"/>
 </kw>
 <return>
 <value>${result}</value>
-<status status="PASS" start="2026-04-02T10:17:36.535261" elapsed="0.000065"/>
+<status status="PASS" start="2026-04-02T10:42:00.816898" elapsed="0.000060"/>
 </return>
-<msg time="2026-04-02T10:17:36.535540" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzIyNTYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.QSU57uSy0uGeP5lyMT-_eNFnIpOgUGpLheEyqeFH...</msg>
+<msg time="2026-04-02T10:42:00.817114" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzM3MjAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.CQsxcXYm8G61ASZjWWzwnt1x-CpSOOOxgth5oOhJ...</msg>
 <var>${token}</var>
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="PASS" start="2026-04-02T10:17:36.109029" elapsed="0.426547"/>
+<status status="PASS" start="2026-04-02T10:42:00.453152" elapsed="0.363986"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T10:17:36.536252" level="INFO">Length is 2.</msg>
+<msg time="2026-04-02T10:42:00.817676" level="INFO">Length is 2.</msg>
 <arg>${token}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T10:17:36.535726" elapsed="0.000575"/>
+<status status="PASS" start="2026-04-02T10:42:00.817241" elapsed="0.000485"/>
 </kw>
-<status status="PASS" start="2026-04-02T10:17:36.108033" elapsed="0.428395"/>
+<status status="PASS" start="2026-04-02T10:42:00.452355" elapsed="0.365475"/>
 </test>
 <test id="s1-s1-s1-t2" name="Get Authenticate List" line="12">
 <kw name="API Get Auth" owner="api_keywords">
 <kw name="Get Auth" owner="CustomAPI">
-<msg time="2026-04-02T10:17:37.159230" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzIyNTYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.QSU57uSy0uGeP5lyMT-_eNFnIpOgUGpLheEyqeFHcQo']</msg>
+<msg time="2026-04-02T10:42:01.255534" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzM3MjAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.CQsxcXYm8G61ASZjWWzwnt1x-CpSOOOxgth5oOhJKxg']</msg>
 <var>${result}</var>
-<status status="PASS" start="2026-04-02T10:17:36.537558" elapsed="0.621716"/>
+<status status="PASS" start="2026-04-02T10:42:00.818680" elapsed="0.436893"/>
 </kw>
 <return>
 <value>${result}</value>
-<status status="PASS" start="2026-04-02T10:17:37.159342" elapsed="0.000054"/>
+<status status="PASS" start="2026-04-02T10:42:01.255669" elapsed="0.000047"/>
 </return>
-<msg time="2026-04-02T10:17:37.159578" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzIyNTYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.QSU57uSy0uGeP5lyMT-_eNFnIpOgUGpLheEyqeFHcQo']</msg>
+<msg time="2026-04-02T10:42:01.255861" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzM3MjAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.CQsxcXYm8G61ASZjWWzwnt1x-CpSOOOxgth5oOhJKxg']</msg>
 <var>${list}</var>
-<status status="PASS" start="2026-04-02T10:17:36.537293" elapsed="0.622308"/>
+<status status="PASS" start="2026-04-02T10:42:00.818467" elapsed="0.437416"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T10:17:37.160035" level="INFO">Length is 1.</msg>
+<msg time="2026-04-02T10:42:01.256201" level="INFO">Length is 1.</msg>
 <arg>${list}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T10:17:37.159717" elapsed="0.000356"/>
+<status status="PASS" start="2026-04-02T10:42:01.255964" elapsed="0.000275"/>
 </kw>
-<status status="PASS" start="2026-04-02T10:17:36.536721" elapsed="0.623455"/>
+<status status="PASS" start="2026-04-02T10:42:00.818055" elapsed="0.438274"/>
 </test>
-<status status="PASS" start="2026-04-02T10:17:35.670641" elapsed="1.490028"/>
+<status status="PASS" start="2026-04-02T10:41:57.660951" elapsed="3.595818"/>
 </suite>
-<status status="PASS" start="2026-04-02T10:17:35.669559" elapsed="1.491798"/>
+<status status="PASS" start="2026-04-02T10:41:57.659764" elapsed="3.597546"/>
 </suite>
 <suite id="s1-s2" name="Ui" source="/tests/tests/ui">
 <suite id="s1-s2-s1" name="Dashboard Tests" source="/tests/tests/ui/dashboard_tests.robot">
 <test id="s1-s2-s1-t1" name="Open Dashboard" line="9">
 <kw name="Open Browser To Application" owner="ui_keywords">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-02T10:42:01.537290" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fe99a4d3380&gt;</msg>
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-02T10:42:01.534508" elapsed="0.002820"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<msg time="2026-04-02T10:42:01.537830" level="FAIL">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</msg>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless=new</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="FAIL" start="2026-04-02T10:42:01.537454" elapsed="0.000542">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T10:42:01.538119" elapsed="0.000029"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T10:42:01.538238" elapsed="0.000023"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T10:42:01.538345" elapsed="0.000023"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-software-rasterizer</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T10:42:01.538450" elapsed="0.000022"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--window-size=1920,1080</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T10:42:01.538551" elapsed="0.000029"/>
+</kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-02T10:17:37.445169" level="INFO">Opening browser 'chrome' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
-<msg time="2026-04-02T10:17:37.682052" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-04-02T10:17:37.682248" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x5637a168d252 &lt;unknown&gt;
-#1 0x5637a105d226 &lt;unknown&gt;
-#2 0x5637a109a100 &lt;unknown&gt;
-#3 0x5637a1093fb3 &lt;unknown&gt;
-#4 0x5637a10e366c &lt;unknown&gt;
-#5 0x5637a10e2dbd &lt;unknown&gt;
-#6 0x5637a10d3fa7 &lt;unknown&gt;
-#7 0x5637a10a1de2 &lt;unknown&gt;
-#8 0x5637a10a2c55 &lt;unknown&gt;
-#9 0x5637a1650ee4 &lt;unknown&gt;
-#10 0x5637a1654236 &lt;unknown&gt;
-#11 0x5637a1653cee &lt;unknown&gt;
-#12 0x5637a16546a9 &lt;unknown&gt;
-#13 0x5637a16406ea &lt;unknown&gt;
-#14 0x5637a1654a2a &lt;unknown&gt;
-#15 0x5637a1629359 &lt;unknown&gt;
-#16 0x5637a1679f79 &lt;unknown&gt;
-#17 0x5637a167a16d &lt;unknown&gt;
-#18 0x5637a168bc8e &lt;unknown&gt;
-#19 0x7fa6be874b7b &lt;unknown&gt;
-</msg>
 <arg>${LOGIN_URL}</arg>
-<arg>${BROWSER}</arg>
+<arg>${BROWSER} options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2026-04-02T10:17:37.444849" elapsed="0.239344">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x5637a168d252 &lt;unknown&gt;
-#1 0x5637a105d226 &lt;unknown&gt;
-#2 0x5637a109a100 &lt;unknown&gt;
-#3 0x5637a1093fb3 &lt;unknown&gt;
-#4 0x5637a10e366c &lt;unknown&gt;
-#5 0x5637a10e2dbd &lt;unknown&gt;
-#6 0x5637a10d3fa7 &lt;unknown&gt;
-#7 0x5637a10a1de2 &lt;unknown&gt;
-#8 0x5637a10a2c55 &lt;unknown&gt;
-#9 0x5637a1650ee4 &lt;unknown&gt;
-#10 0x5637a1654236 &lt;unknown&gt;
-#11 0x5637a1653cee &lt;unknown&gt;
-#12 0x5637a16546a9 &lt;unknown&gt;
-#13 0x5637a16406ea &lt;unknown&gt;
-#14 0x5637a1654a2a &lt;unknown&gt;
-#15 0x5637a1629359 &lt;unknown&gt;
-#16 0x5637a1679f79 &lt;unknown&gt;
-#17 0x5637a167a16d &lt;unknown&gt;
-#18 0x5637a168bc8e &lt;unknown&gt;
-#19 0x7fa6be874b7b &lt;unknown&gt;
-</status>
+<status status="NOT RUN" start="2026-04-02T10:42:01.538722" elapsed="0.000029"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-04-02T10:17:37.684413" elapsed="0.000034"/>
+<status status="NOT RUN" start="2026-04-02T10:42:01.538840" elapsed="0.000023"/>
 </kw>
-<status status="FAIL" start="2026-04-02T10:17:37.444105" elapsed="0.240505">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x5637a168d252 &lt;unknown&gt;
-#1 0x5637a105d226 &lt;unknown&gt;
-#2 0x5637a109a100 &lt;unknown&gt;
-#3 0x5637a1093fb3 &lt;unknown&gt;
-#4 0x5637a10e366c &lt;unknown&gt;
-#5 0x5637a10e2dbd &lt;unknown&gt;
-#6 0x5637a10d3fa7 &lt;unknown&gt;
-#7 0x5637a10a1de2 &lt;unknown&gt;
-#8 0x5637a10a2c55 &lt;unknown&gt;
-#9 0x5637a1650ee4 &lt;unknown&gt;
-#10 0x5637a1654236 &lt;unknown&gt;
-#11 0x5637a1653cee &lt;unknown&gt;
-#12 0x5637a16546a9 &lt;unknown&gt;
-#13 0x5637a16406ea &lt;unknown&gt;
-#14 0x5637a1654a2a &lt;unknown&gt;
-#15 0x5637a1629359 &lt;unknown&gt;
-#16 0x5637a1679f79 &lt;unknown&gt;
-#17 0x5637a167a16d &lt;unknown&gt;
-#18 0x5637a168bc8e &lt;unknown&gt;
-#19 0x7fa6be874b7b &lt;unknown&gt;
-</status>
+<status status="FAIL" start="2026-04-02T10:42:01.534005" elapsed="0.004959">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
 </kw>
 <kw name="Login With Credentials" owner="ui_keywords">
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="NOT RUN" start="2026-04-02T10:17:37.684807" elapsed="0.000033"/>
+<status status="NOT RUN" start="2026-04-02T10:42:01.539107" elapsed="0.000028"/>
 </kw>
 <kw name="Open Dashboard" owner="DashboardPage">
-<status status="NOT RUN" start="2026-04-02T10:17:37.684961" elapsed="0.000026"/>
+<status status="NOT RUN" start="2026-04-02T10:42:01.539247" elapsed="0.000025"/>
 </kw>
 <kw name="Dashboard Should Be Visible" owner="DashboardPage">
-<status status="NOT RUN" start="2026-04-02T10:17:37.685095" elapsed="0.000026"/>
+<status status="NOT RUN" start="2026-04-02T10:42:01.539369" elapsed="0.000025"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2026-04-02T10:17:37.685203" elapsed="0.000024"/>
+<status status="NOT RUN" start="2026-04-02T10:42:01.539471" elapsed="0.000023"/>
 </kw>
-<status status="FAIL" start="2026-04-02T10:17:37.443492" elapsed="0.241887">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x5637a168d252 &lt;unknown&gt;
-#1 0x5637a105d226 &lt;unknown&gt;
-#2 0x5637a109a100 &lt;unknown&gt;
-#3 0x5637a1093fb3 &lt;unknown&gt;
-#4 0x5637a10e366c &lt;unknown&gt;
-#5 0x5637a10e2dbd &lt;unknown&gt;
-#6 0x5637a10d3fa7 &lt;unknown&gt;
-#7 0x5637a10a1de2 &lt;unknown&gt;
-#8 0x5637a10a2c55 &lt;unknown&gt;
-#9 0x5637a1650ee4 &lt;unknown&gt;
-#10 0x5637a1654236 &lt;unknown&gt;
-#11 0x5637a1653cee &lt;unknown&gt;
-#12 0x5637a16546a9 &lt;unknown&gt;
-#13 0x5637a16406ea &lt;unknown&gt;
-#14 0x5637a1654a2a &lt;unknown&gt;
-#15 0x5637a1629359 &lt;unknown&gt;
-#16 0x5637a1679f79 &lt;unknown&gt;
-#17 0x5637a167a16d &lt;unknown&gt;
-#18 0x5637a168bc8e &lt;unknown&gt;
-#19 0x7fa6be874b7b &lt;unknown&gt;
-</status>
+<status status="FAIL" start="2026-04-02T10:42:01.533453" elapsed="0.006199">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
 </test>
-<status status="FAIL" start="2026-04-02T10:17:37.162830" elapsed="0.523049"/>
+<status status="FAIL" start="2026-04-02T10:42:01.258738" elapsed="0.281285"/>
 </suite>
 <suite id="s1-s2-s2" name="Login Tests" source="/tests/tests/ui/login_tests.robot">
 <test id="s1-s2-s2-t1" name="Valid Login" line="9">
 <kw name="Open Browser To Application" owner="ui_keywords">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-02T10:42:01.544468" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fe99a3556d0&gt;</msg>
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-02T10:42:01.544155" elapsed="0.000343"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<msg time="2026-04-02T10:42:01.544967" level="FAIL">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</msg>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless=new</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="FAIL" start="2026-04-02T10:42:01.544677" elapsed="0.000377">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T10:42:01.545164" elapsed="0.000025"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T10:42:01.545276" elapsed="0.000022"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T10:42:01.545378" elapsed="0.000021"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-software-rasterizer</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T10:42:01.545477" elapsed="0.000021"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--window-size=1920,1080</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T10:42:01.545575" elapsed="0.000021"/>
+</kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-02T10:17:37.691257" level="INFO">Opening browser 'chrome' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
-<msg time="2026-04-02T10:17:37.840891" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-04-02T10:17:37.841091" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x5618f779f252 &lt;unknown&gt;
-#1 0x5618f716f226 &lt;unknown&gt;
-#2 0x5618f71ac100 &lt;unknown&gt;
-#3 0x5618f71a5fb3 &lt;unknown&gt;
-#4 0x5618f71f566c &lt;unknown&gt;
-#5 0x5618f71f4dbd &lt;unknown&gt;
-#6 0x5618f71e5fa7 &lt;unknown&gt;
-#7 0x5618f71b3de2 &lt;unknown&gt;
-#8 0x5618f71b4c55 &lt;unknown&gt;
-#9 0x5618f7762ee4 &lt;unknown&gt;
-#10 0x5618f7766236 &lt;unknown&gt;
-#11 0x5618f7765cee &lt;unknown&gt;
-#12 0x5618f77666a9 &lt;unknown&gt;
-#13 0x5618f77526ea &lt;unknown&gt;
-#14 0x5618f7766a2a &lt;unknown&gt;
-#15 0x5618f773b359 &lt;unknown&gt;
-#16 0x5618f778bf79 &lt;unknown&gt;
-#17 0x5618f778c16d &lt;unknown&gt;
-#18 0x5618f779dc8e &lt;unknown&gt;
-#19 0x7f7f3e843b7b &lt;unknown&gt;
-</msg>
 <arg>${LOGIN_URL}</arg>
-<arg>${BROWSER}</arg>
+<arg>${BROWSER} options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2026-04-02T10:17:37.691043" elapsed="0.151054">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x5618f779f252 &lt;unknown&gt;
-#1 0x5618f716f226 &lt;unknown&gt;
-#2 0x5618f71ac100 &lt;unknown&gt;
-#3 0x5618f71a5fb3 &lt;unknown&gt;
-#4 0x5618f71f566c &lt;unknown&gt;
-#5 0x5618f71f4dbd &lt;unknown&gt;
-#6 0x5618f71e5fa7 &lt;unknown&gt;
-#7 0x5618f71b3de2 &lt;unknown&gt;
-#8 0x5618f71b4c55 &lt;unknown&gt;
-#9 0x5618f7762ee4 &lt;unknown&gt;
-#10 0x5618f7766236 &lt;unknown&gt;
-#11 0x5618f7765cee &lt;unknown&gt;
-#12 0x5618f77666a9 &lt;unknown&gt;
-#13 0x5618f77526ea &lt;unknown&gt;
-#14 0x5618f7766a2a &lt;unknown&gt;
-#15 0x5618f773b359 &lt;unknown&gt;
-#16 0x5618f778bf79 &lt;unknown&gt;
-#17 0x5618f778c16d &lt;unknown&gt;
-#18 0x5618f779dc8e &lt;unknown&gt;
-#19 0x7f7f3e843b7b &lt;unknown&gt;
-</status>
+<status status="NOT RUN" start="2026-04-02T10:42:01.545726" elapsed="0.000025"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-04-02T10:17:37.842342" elapsed="0.000036"/>
+<status status="NOT RUN" start="2026-04-02T10:42:01.545834" elapsed="0.000021"/>
 </kw>
-<status status="FAIL" start="2026-04-02T10:17:37.689881" elapsed="0.152680">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x5618f779f252 &lt;unknown&gt;
-#1 0x5618f716f226 &lt;unknown&gt;
-#2 0x5618f71ac100 &lt;unknown&gt;
-#3 0x5618f71a5fb3 &lt;unknown&gt;
-#4 0x5618f71f566c &lt;unknown&gt;
-#5 0x5618f71f4dbd &lt;unknown&gt;
-#6 0x5618f71e5fa7 &lt;unknown&gt;
-#7 0x5618f71b3de2 &lt;unknown&gt;
-#8 0x5618f71b4c55 &lt;unknown&gt;
-#9 0x5618f7762ee4 &lt;unknown&gt;
-#10 0x5618f7766236 &lt;unknown&gt;
-#11 0x5618f7765cee &lt;unknown&gt;
-#12 0x5618f77666a9 &lt;unknown&gt;
-#13 0x5618f77526ea &lt;unknown&gt;
-#14 0x5618f7766a2a &lt;unknown&gt;
-#15 0x5618f773b359 &lt;unknown&gt;
-#16 0x5618f778bf79 &lt;unknown&gt;
-#17 0x5618f778c16d &lt;unknown&gt;
-#18 0x5618f779dc8e &lt;unknown&gt;
-#19 0x7f7f3e843b7b &lt;unknown&gt;
-</status>
+<status status="FAIL" start="2026-04-02T10:42:01.543956" elapsed="0.001980">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
 </kw>
 <kw name="Login With Credentials" owner="ui_keywords">
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="NOT RUN" start="2026-04-02T10:17:37.842786" elapsed="0.000032"/>
+<status status="NOT RUN" start="2026-04-02T10:42:01.546066" elapsed="0.000026"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
 <arg>Employee Management</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-04-02T10:17:37.842948" elapsed="0.000031"/>
+<status status="NOT RUN" start="2026-04-02T10:42:01.546176" elapsed="0.000023"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2026-04-02T10:17:37.843093" elapsed="0.000027"/>
+<status status="NOT RUN" start="2026-04-02T10:42:01.546276" elapsed="0.000022"/>
 </kw>
-<status status="FAIL" start="2026-04-02T10:17:37.689404" elapsed="0.153866">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-#0 0x5618f779f252 &lt;unknown&gt;
-#1 0x5618f716f226 &lt;unknown&gt;
-#2 0x5618f71ac100 &lt;unknown&gt;
-#3 0x5618f71a5fb3 &lt;unknown&gt;
-#4 0x5618f71f566c &lt;unknown&gt;
-#5 0x5618f71f4dbd &lt;unknown&gt;
-#6 0x5618f71e5fa7 &lt;unknown&gt;
-#7 0x5618f71b3de2 &lt;unknown&gt;
-#8 0x5618f71b4c55 &lt;unknown&gt;
-#9 0x5618f7762ee4 &lt;unknown&gt;
-#10 0x5618f7766236 &lt;unknown&gt;
-#11 0x5618f7765cee &lt;unknown&gt;
-#12 0x5618f77666a9 &lt;unknown&gt;
-#13 0x5618f77526ea &lt;unknown&gt;
-#14 0x5618f7766a2a &lt;unknown&gt;
-#15 0x5618f773b359 &lt;unknown&gt;
-#16 0x5618f778bf79 &lt;unknown&gt;
-#17 0x5618f778c16d &lt;unknown&gt;
-#18 0x5618f779dc8e &lt;unknown&gt;
-#19 0x7f7f3e843b7b &lt;unknown&gt;
-</status>
+<status status="FAIL" start="2026-04-02T10:42:01.543471" elapsed="0.002936">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
 </test>
-<status status="FAIL" start="2026-04-02T10:17:37.686449" elapsed="0.157280"/>
+<status status="FAIL" start="2026-04-02T10:42:01.540565" elapsed="0.006172"/>
 </suite>
-<status status="FAIL" start="2026-04-02T10:17:37.161841" elapsed="0.682546"/>
+<status status="FAIL" start="2026-04-02T10:42:01.257805" elapsed="0.289525"/>
 </suite>
-<status status="FAIL" start="2026-04-02T10:17:35.609272" elapsed="2.235978"/>
+<status status="FAIL" start="2026-04-02T10:41:57.607058" elapsed="3.940917"/>
 </suite>
 <statistics>
 <total>
