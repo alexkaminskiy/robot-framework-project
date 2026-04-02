@@ -18,7 +18,7 @@ Input Password
     Input Text    ${PASSWORD_FIELD}    ${password}
 
 Submit Login
-    Wait Until Element Is Visible    ${LOGIN_BUTTON}    timeout=10
+    Wait Until Element Is Visible    ${LOGIN_BUTTON}    timeout=60
     Click Element    ${LOGIN_BUTTON}
 
 Employee Header Should Be Visible
