@@ -18,6 +18,7 @@ Input Password
     Input Text    ${PASSWORD_FIELD}    ${password}
 
 Submit Login
+    Scroll Element Into View      ${LOGIN_BUTTON}
     Wait Until Element Is Visible    ${LOGIN_BUTTON}    timeout=60
     Click Element    ${LOGIN_BUTTON}
 
