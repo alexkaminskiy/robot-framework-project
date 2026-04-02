@@ -1,237 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T11:13:16.819239" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T11:25:33.268496" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/tests/tests">
 <suite id="s1-s1" name="Api" source="/tests/tests/api">
 <suite id="s1-s1-s1" name="User Api Tests" source="/tests/tests/api/user_api_tests.robot">
 <test id="s1-s1-s1-t1" name="Login API" line="8">
 <kw name="API Login" owner="api_keywords">
 <kw name="Login" owner="CustomAPI">
-<msg time="2026-04-02T11:13:17.554094" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzU1OTcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.UbZ-Ug_Qln53RulmySldqWXvdw3Oht1UyEnE0jnM...</msg>
+<msg time="2026-04-02T11:25:34.091880" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzYzMzQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.xnur6deiIYrOuL26rakL5Y3RXDx5l0G3feahGUk6...</msg>
 <var>${result}</var>
 <arg>${user}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-04-02T11:13:17.204048" elapsed="0.350108"/>
+<status status="PASS" start="2026-04-02T11:25:33.710240" elapsed="0.381690"/>
 </kw>
 <return>
 <value>${result}</value>
-<status status="PASS" start="2026-04-02T11:13:17.554246" elapsed="0.000116"/>
+<status status="PASS" start="2026-04-02T11:25:34.092008" elapsed="0.000056"/>
 </return>
-<msg time="2026-04-02T11:13:17.554529" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzU1OTcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.UbZ-Ug_Qln53RulmySldqWXvdw3Oht1UyEnE0jnM...</msg>
+<msg time="2026-04-02T11:25:34.092209" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzYzMzQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.xnur6deiIYrOuL26rakL5Y3RXDx5l0G3feahGUk6...</msg>
 <var>${token}</var>
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="PASS" start="2026-04-02T11:13:17.203333" elapsed="0.351221"/>
+<status status="PASS" start="2026-04-02T11:25:33.709597" elapsed="0.382636"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T11:13:17.555188" level="INFO">Length is 2.</msg>
+<msg time="2026-04-02T11:25:34.092860" level="INFO">Length is 2.</msg>
 <arg>${token}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T11:13:17.554695" elapsed="0.000534"/>
+<status status="PASS" start="2026-04-02T11:25:34.092382" elapsed="0.000520"/>
 </kw>
-<status status="PASS" start="2026-04-02T11:13:17.202466" elapsed="0.352902"/>
+<status status="PASS" start="2026-04-02T11:25:33.708836" elapsed="0.384173"/>
 </test>
 <test id="s1-s1-s1-t2" name="Get Authenticate List" line="12">
 <kw name="API Get Auth" owner="api_keywords">
 <kw name="Get Auth" owner="CustomAPI">
-<msg time="2026-04-02T11:13:17.902114" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzU1OTcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.UbZ-Ug_Qln53RulmySldqWXvdw3Oht1UyEnE0jnMKWY']</msg>
+<msg time="2026-04-02T11:25:34.394818" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzYzMzQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.xnur6deiIYrOuL26rakL5Y3RXDx5l0G3feahGUk6NKs']</msg>
 <var>${result}</var>
-<status status="PASS" start="2026-04-02T11:13:17.556368" elapsed="0.345796"/>
+<status status="PASS" start="2026-04-02T11:25:34.093931" elapsed="0.300915"/>
 </kw>
 <return>
 <value>${result}</value>
-<status status="PASS" start="2026-04-02T11:13:17.902235" elapsed="0.000086"/>
+<status status="PASS" start="2026-04-02T11:25:34.394889" elapsed="0.000036"/>
 </return>
-<msg time="2026-04-02T11:13:17.902478" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzU1OTcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.UbZ-Ug_Qln53RulmySldqWXvdw3Oht1UyEnE0jnMKWY']</msg>
+<msg time="2026-04-02T11:25:34.395042" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzYzMzQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.xnur6deiIYrOuL26rakL5Y3RXDx5l0G3feahGUk6NKs']</msg>
 <var>${list}</var>
-<status status="PASS" start="2026-04-02T11:13:17.556140" elapsed="0.346360"/>
+<status status="PASS" start="2026-04-02T11:25:34.093734" elapsed="0.301330"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T11:13:17.902931" level="INFO">Length is 1.</msg>
+<msg time="2026-04-02T11:25:34.395446" level="INFO">Length is 1.</msg>
 <arg>${list}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T11:13:17.902615" elapsed="0.000353"/>
+<status status="PASS" start="2026-04-02T11:25:34.395146" elapsed="0.000349"/>
 </kw>
-<status status="PASS" start="2026-04-02T11:13:17.555635" elapsed="0.347437"/>
+<status status="PASS" start="2026-04-02T11:25:34.093232" elapsed="0.302354"/>
 </test>
-<status status="PASS" start="2026-04-02T11:13:16.874785" elapsed="1.028790"/>
+<status status="PASS" start="2026-04-02T11:25:33.323813" elapsed="1.072209"/>
 </suite>
-<status status="PASS" start="2026-04-02T11:13:16.873739" elapsed="1.030399"/>
+<status status="PASS" start="2026-04-02T11:25:33.322731" elapsed="1.073980"/>
 </suite>
 <suite id="s1-s2" name="Ui" source="/tests/tests/ui">
 <suite id="s1-s2-s1" name="Dashboard Tests" source="/tests/tests/ui/dashboard_tests.robot">
 <test id="s1-s2-s1-t1" name="Open Dashboard" line="9">
 <kw name="Open Browser To Application" owner="ui_keywords">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-04-02T11:13:18.158018" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f25a9f8b260&gt;</msg>
+<msg time="2026-04-02T11:25:34.654260" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7ff780f5b2c0&gt;</msg>
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
-<arg>sys, selenium.webdriver</arg>
+<arg>sys,</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-04-02T11:13:18.155172" elapsed="0.002884"/>
+<status status="PASS" start="2026-04-02T11:25:34.651586" elapsed="0.002712"/>
+</kw>
+<kw name="selenium.webdriver">
+<msg time="2026-04-02T11:25:34.655765" level="FAIL">No keyword with name 'selenium.webdriver' found.</msg>
+<status status="FAIL" start="2026-04-02T11:25:34.655721" elapsed="0.000083">No keyword with name 'selenium.webdriver' found.</status>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
-<msg time="2026-04-02T11:13:18.158560" level="FAIL">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</msg>
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--headless=new</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="FAIL" start="2026-04-02T11:13:18.158188" elapsed="0.000541">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
+<status status="NOT RUN" start="2026-04-02T11:25:34.655917" elapsed="0.000027"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.158854" elapsed="0.000027"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.656029" elapsed="0.000023"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.158970" elapsed="0.000023"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.656133" elapsed="0.000021"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.159075" elapsed="0.000022"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.656232" elapsed="0.000021"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-software-rasterizer</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.159175" elapsed="0.000021"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.656329" elapsed="0.000020"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--window-size=1920,1080</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.159297" elapsed="0.000026"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.656494" elapsed="0.000026"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
 <arg>${LOGIN_URL}</arg>
 <arg>chrome</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.159431" elapsed="0.000023"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.656619" elapsed="0.000023"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.159537" elapsed="0.000021"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.656723" elapsed="0.000020"/>
 </kw>
-<status status="FAIL" start="2026-04-02T11:13:18.154680" elapsed="0.004982">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
+<status status="FAIL" start="2026-04-02T11:25:34.651089" elapsed="0.005756">No keyword with name 'selenium.webdriver' found.</status>
 </kw>
 <kw name="Login With Credentials" owner="ui_keywords">
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="NOT RUN" start="2026-04-02T11:13:18.159815" elapsed="0.000030"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.656985" elapsed="0.000029"/>
 </kw>
 <kw name="Open Dashboard" owner="DashboardPage">
-<status status="NOT RUN" start="2026-04-02T11:13:18.159955" elapsed="0.000025"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.657130" elapsed="0.000025"/>
 </kw>
 <kw name="Dashboard Should Be Visible" owner="DashboardPage">
-<status status="NOT RUN" start="2026-04-02T11:13:18.160075" elapsed="0.000024"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.657249" elapsed="0.000023"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.160174" elapsed="0.000022"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.657345" elapsed="0.000045"/>
 </kw>
-<status status="FAIL" start="2026-04-02T11:13:18.154080" elapsed="0.006274">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
+<status status="FAIL" start="2026-04-02T11:25:34.650511" elapsed="0.007014">No keyword with name 'selenium.webdriver' found.</status>
 </test>
-<status status="FAIL" start="2026-04-02T11:13:17.905697" elapsed="0.255000"/>
+<status status="FAIL" start="2026-04-02T11:25:34.398193" elapsed="0.259670"/>
 </suite>
 <suite id="s1-s2-s2" name="Login Tests" source="/tests/tests/ui/login_tests.robot">
 <test id="s1-s2-s2-t1" name="Valid Login" line="9">
 <kw name="Open Browser To Application" owner="ui_keywords">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-04-02T11:13:18.165176" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f25a9e114f0&gt;</msg>
+<msg time="2026-04-02T11:25:34.662585" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7ff780f5dc10&gt;</msg>
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
-<arg>sys, selenium.webdriver</arg>
+<arg>sys,</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-04-02T11:13:18.164838" elapsed="0.000368"/>
+<status status="PASS" start="2026-04-02T11:25:34.662141" elapsed="0.000484"/>
+</kw>
+<kw name="selenium.webdriver">
+<msg time="2026-04-02T11:25:34.664717" level="FAIL">No keyword with name 'selenium.webdriver' found.</msg>
+<status status="FAIL" start="2026-04-02T11:25:34.664665" elapsed="0.000099">No keyword with name 'selenium.webdriver' found.</status>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
-<msg time="2026-04-02T11:13:18.165708" level="FAIL">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</msg>
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--headless=new</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="FAIL" start="2026-04-02T11:13:18.165402" elapsed="0.000403">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
+<status status="NOT RUN" start="2026-04-02T11:25:34.664899" elapsed="0.000036"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.165914" elapsed="0.000025"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.665055" elapsed="0.000032"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.166026" elapsed="0.000023"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.665213" elapsed="0.000031"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.166147" elapsed="0.000024"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.665353" elapsed="0.000057"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-software-rasterizer</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.166255" elapsed="0.000078"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.665527" elapsed="0.000031"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--window-size=1920,1080</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.166462" elapsed="0.000033"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.665669" elapsed="0.000029"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
 <arg>${LOGIN_URL}</arg>
 <arg>chrome</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.166626" elapsed="0.000041"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.665831" elapsed="0.000033"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.166793" elapsed="0.000032"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.665990" elapsed="0.000034"/>
 </kw>
-<status status="FAIL" start="2026-04-02T11:13:18.164630" elapsed="0.002312">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
+<status status="FAIL" start="2026-04-02T11:25:34.661889" elapsed="0.004251">No keyword with name 'selenium.webdriver' found.</status>
 </kw>
 <kw name="Login With Credentials" owner="ui_keywords">
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="NOT RUN" start="2026-04-02T11:13:18.167083" elapsed="0.000027"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.666314" elapsed="0.000037"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
 <arg>Employee Management</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.167195" elapsed="0.000023"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.666501" elapsed="0.000032"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2026-04-02T11:13:18.167321" elapsed="0.000024"/>
+<status status="NOT RUN" start="2026-04-02T11:25:34.666638" elapsed="0.000030"/>
 </kw>
-<status status="FAIL" start="2026-04-02T11:13:18.164165" elapsed="0.003297">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
+<status status="FAIL" start="2026-04-02T11:25:34.661437" elapsed="0.005381">No keyword with name 'selenium.webdriver' found.</status>
 </test>
-<status status="FAIL" start="2026-04-02T11:13:18.161362" elapsed="0.006413"/>
+<status status="FAIL" start="2026-04-02T11:25:34.658535" elapsed="0.008572"/>
 </suite>
-<status status="FAIL" start="2026-04-02T11:13:17.904663" elapsed="0.263737"/>
+<status status="FAIL" start="2026-04-02T11:25:34.397211" elapsed="0.270622"/>
 </suite>
-<status status="FAIL" start="2026-04-02T11:13:16.820589" elapsed="1.348361"/>
+<status status="FAIL" start="2026-04-02T11:25:33.269779" elapsed="1.398713"/>
 </suite>
 <statistics>
 <total>
