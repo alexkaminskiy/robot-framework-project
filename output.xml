@@ -1,70 +1,329 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T09:45:51.258499" rpa="false" schemaversion="5">
-<suite id="s1" name="Api" source="/tests/tests/api">
-<suite id="s1-s1" name="User Api Tests" source="/tests/tests/api/user_api_tests.robot">
-<test id="s1-s1-t1" name="Login API" line="8">
+<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T09:51:04.162968" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/tests/tests">
+<suite id="s1-s1" name="Api" source="/tests/tests/api">
+<suite id="s1-s1-s1" name="User Api Tests" source="/tests/tests/api/user_api_tests.robot">
+<test id="s1-s1-s1-t1" name="Login API" line="8">
 <kw name="API Login" owner="api_keywords">
 <kw name="Login" owner="CustomAPI">
-<msg time="2026-04-02T09:45:52.012636" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzAzNTEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.oSUACu7FbuRXzbxyZKSP0GSySf6pLn3ow1R9yRC_...</msg>
+<msg time="2026-04-02T09:51:05.178392" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzA2NjUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.Xi9u9Dx2PRUKptR0bVjOgAuUJsGJ6xhjx-6qs6QT...</msg>
 <var>${result}</var>
 <arg>${user}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-04-02T09:45:51.659333" elapsed="0.353385"/>
+<status status="PASS" start="2026-04-02T09:51:04.603060" elapsed="0.575390"/>
 </kw>
 <return>
 <value>${result}</value>
-<status status="PASS" start="2026-04-02T09:45:52.012822" elapsed="0.000056"/>
+<status status="PASS" start="2026-04-02T09:51:05.178538" elapsed="0.000059"/>
 </return>
-<msg time="2026-04-02T09:45:52.013037" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzAzNTEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.oSUACu7FbuRXzbxyZKSP0GSySf6pLn3ow1R9yRC_...</msg>
+<msg time="2026-04-02T09:51:05.178819" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzA2NjUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.Xi9u9Dx2PRUKptR0bVjOgAuUJsGJ6xhjx-6qs6QT...</msg>
 <var>${token}</var>
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="PASS" start="2026-04-02T09:45:51.658633" elapsed="0.354429"/>
+<status status="PASS" start="2026-04-02T09:51:04.602388" elapsed="0.576464"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T09:45:52.013705" level="INFO">Length is 2.</msg>
+<msg time="2026-04-02T09:51:05.179473" level="INFO">Length is 2.</msg>
 <arg>${token}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T09:45:52.013196" elapsed="0.000554"/>
+<status status="PASS" start="2026-04-02T09:51:05.179001" elapsed="0.000514"/>
 </kw>
-<status status="PASS" start="2026-04-02T09:45:51.657788" elapsed="0.356072"/>
+<status status="PASS" start="2026-04-02T09:51:04.601589" elapsed="0.578032"/>
 </test>
-<test id="s1-s1-t2" name="Get Authenticate List" line="12">
+<test id="s1-s1-s1-t2" name="Get Authenticate List" line="12">
 <kw name="API Get Auth" owner="api_keywords">
 <kw name="Get Auth" owner="CustomAPI">
-<msg time="2026-04-02T09:45:52.519088" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzAzNTIsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.8w6tY1GIR9jPZi3JOBM-dkU7JTC8g6YHPpIYNGmQzls']</msg>
+<msg time="2026-04-02T09:51:05.466519" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzA2NjUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.Xi9u9Dx2PRUKptR0bVjOgAuUJsGJ6xhjx-6qs6QT9Ak']</msg>
 <var>${result}</var>
-<status status="PASS" start="2026-04-02T09:45:52.014795" elapsed="0.504346"/>
+<status status="PASS" start="2026-04-02T09:51:05.180525" elapsed="0.286034"/>
 </kw>
 <return>
 <value>${result}</value>
-<status status="PASS" start="2026-04-02T09:45:52.519220" elapsed="0.000060"/>
+<status status="PASS" start="2026-04-02T09:51:05.466623" elapsed="0.000056"/>
 </return>
-<msg time="2026-04-02T09:45:52.519440" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzAzNTIsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.8w6tY1GIR9jPZi3JOBM-dkU7JTC8g6YHPpIYNGmQzls']</msg>
+<msg time="2026-04-02T09:51:05.466879" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzA2NjUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.Xi9u9Dx2PRUKptR0bVjOgAuUJsGJ6xhjx-6qs6QT9Ak']</msg>
 <var>${list}</var>
-<status status="PASS" start="2026-04-02T09:45:52.014566" elapsed="0.504896"/>
+<status status="PASS" start="2026-04-02T09:51:05.180325" elapsed="0.286577"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T09:45:52.519937" level="INFO">Length is 1.</msg>
+<msg time="2026-04-02T09:51:05.467269" level="INFO">Length is 1.</msg>
 <arg>${list}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T09:45:52.519607" elapsed="0.000370"/>
+<status status="PASS" start="2026-04-02T09:51:05.466996" elapsed="0.000311"/>
 </kw>
-<status status="PASS" start="2026-04-02T09:45:52.014077" elapsed="0.506003"/>
+<status status="PASS" start="2026-04-02T09:51:05.179884" elapsed="0.287516"/>
 </test>
-<status status="PASS" start="2026-04-02T09:45:51.320257" elapsed="1.200272"/>
+<status status="PASS" start="2026-04-02T09:51:04.218311" elapsed="1.249548"/>
 </suite>
-<status status="PASS" start="2026-04-02T09:45:51.261745" elapsed="1.259415"/>
+<status status="PASS" start="2026-04-02T09:51:04.217371" elapsed="1.251045"/>
+</suite>
+<suite id="s1-s2" name="Ui" source="/tests/tests/ui">
+<suite id="s1-s2-s1" name="Dashboard Tests" source="/tests/tests/ui/dashboard_tests.robot">
+<test id="s1-s2-s1-t1" name="Open Dashboard" line="9">
+<kw name="Open Browser To Application" owner="ui_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T09:51:05.716475" level="INFO">Opening browser 'chrome' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
+<msg time="2026-04-02T09:51:05.942066" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-02T09:51:05.942245" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x56374ab50252 &lt;unknown&gt;
+#1 0x56374a520226 &lt;unknown&gt;
+#2 0x56374a55d100 &lt;unknown&gt;
+#3 0x56374a556fb3 &lt;unknown&gt;
+#4 0x56374a5a666c &lt;unknown&gt;
+#5 0x56374a5a5dbd &lt;unknown&gt;
+#6 0x56374a596fa7 &lt;unknown&gt;
+#7 0x56374a564de2 &lt;unknown&gt;
+#8 0x56374a565c55 &lt;unknown&gt;
+#9 0x56374ab13ee4 &lt;unknown&gt;
+#10 0x56374ab17236 &lt;unknown&gt;
+#11 0x56374ab16cee &lt;unknown&gt;
+#12 0x56374ab176a9 &lt;unknown&gt;
+#13 0x56374ab036ea &lt;unknown&gt;
+#14 0x56374ab17a2a &lt;unknown&gt;
+#15 0x56374aaec359 &lt;unknown&gt;
+#16 0x56374ab3cf79 &lt;unknown&gt;
+#17 0x56374ab3d16d &lt;unknown&gt;
+#18 0x56374ab4ec8e &lt;unknown&gt;
+#19 0x7f8a95502b7b &lt;unknown&gt;
+</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-04-02T09:51:05.716269" elapsed="0.227830">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x56374ab50252 &lt;unknown&gt;
+#1 0x56374a520226 &lt;unknown&gt;
+#2 0x56374a55d100 &lt;unknown&gt;
+#3 0x56374a556fb3 &lt;unknown&gt;
+#4 0x56374a5a666c &lt;unknown&gt;
+#5 0x56374a5a5dbd &lt;unknown&gt;
+#6 0x56374a596fa7 &lt;unknown&gt;
+#7 0x56374a564de2 &lt;unknown&gt;
+#8 0x56374a565c55 &lt;unknown&gt;
+#9 0x56374ab13ee4 &lt;unknown&gt;
+#10 0x56374ab17236 &lt;unknown&gt;
+#11 0x56374ab16cee &lt;unknown&gt;
+#12 0x56374ab176a9 &lt;unknown&gt;
+#13 0x56374ab036ea &lt;unknown&gt;
+#14 0x56374ab17a2a &lt;unknown&gt;
+#15 0x56374aaec359 &lt;unknown&gt;
+#16 0x56374ab3cf79 &lt;unknown&gt;
+#17 0x56374ab3d16d &lt;unknown&gt;
+#18 0x56374ab4ec8e &lt;unknown&gt;
+#19 0x7f8a95502b7b &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2026-04-02T09:51:05.944313" elapsed="0.000036"/>
+</kw>
+<status status="FAIL" start="2026-04-02T09:51:05.715784" elapsed="0.228696">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x56374ab50252 &lt;unknown&gt;
+#1 0x56374a520226 &lt;unknown&gt;
+#2 0x56374a55d100 &lt;unknown&gt;
+#3 0x56374a556fb3 &lt;unknown&gt;
+#4 0x56374a5a666c &lt;unknown&gt;
+#5 0x56374a5a5dbd &lt;unknown&gt;
+#6 0x56374a596fa7 &lt;unknown&gt;
+#7 0x56374a564de2 &lt;unknown&gt;
+#8 0x56374a565c55 &lt;unknown&gt;
+#9 0x56374ab13ee4 &lt;unknown&gt;
+#10 0x56374ab17236 &lt;unknown&gt;
+#11 0x56374ab16cee &lt;unknown&gt;
+#12 0x56374ab176a9 &lt;unknown&gt;
+#13 0x56374ab036ea &lt;unknown&gt;
+#14 0x56374ab17a2a &lt;unknown&gt;
+#15 0x56374aaec359 &lt;unknown&gt;
+#16 0x56374ab3cf79 &lt;unknown&gt;
+#17 0x56374ab3d16d &lt;unknown&gt;
+#18 0x56374ab4ec8e &lt;unknown&gt;
+#19 0x7f8a95502b7b &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Login With Credentials" owner="ui_keywords">
+<arg>${VALID_USER}</arg>
+<arg>${VALID_PASS}</arg>
+<status status="NOT RUN" start="2026-04-02T09:51:05.944674" elapsed="0.000032"/>
+</kw>
+<kw name="Open Dashboard" owner="DashboardPage">
+<status status="NOT RUN" start="2026-04-02T09:51:05.944854" elapsed="0.000027"/>
+</kw>
+<kw name="Dashboard Should Be Visible" owner="DashboardPage">
+<status status="NOT RUN" start="2026-04-02T09:51:05.944984" elapsed="0.000029"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-04-02T09:51:05.945098" elapsed="0.000024"/>
+</kw>
+<status status="FAIL" start="2026-04-02T09:51:05.715267" elapsed="0.230005">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x56374ab50252 &lt;unknown&gt;
+#1 0x56374a520226 &lt;unknown&gt;
+#2 0x56374a55d100 &lt;unknown&gt;
+#3 0x56374a556fb3 &lt;unknown&gt;
+#4 0x56374a5a666c &lt;unknown&gt;
+#5 0x56374a5a5dbd &lt;unknown&gt;
+#6 0x56374a596fa7 &lt;unknown&gt;
+#7 0x56374a564de2 &lt;unknown&gt;
+#8 0x56374a565c55 &lt;unknown&gt;
+#9 0x56374ab13ee4 &lt;unknown&gt;
+#10 0x56374ab17236 &lt;unknown&gt;
+#11 0x56374ab16cee &lt;unknown&gt;
+#12 0x56374ab176a9 &lt;unknown&gt;
+#13 0x56374ab036ea &lt;unknown&gt;
+#14 0x56374ab17a2a &lt;unknown&gt;
+#15 0x56374aaec359 &lt;unknown&gt;
+#16 0x56374ab3cf79 &lt;unknown&gt;
+#17 0x56374ab3d16d &lt;unknown&gt;
+#18 0x56374ab4ec8e &lt;unknown&gt;
+#19 0x7f8a95502b7b &lt;unknown&gt;
+</status>
+</test>
+<status status="FAIL" start="2026-04-02T09:51:05.469703" elapsed="0.475998"/>
+</suite>
+<suite id="s1-s2-s2" name="Login Tests" source="/tests/tests/ui/login_tests.robot">
+<test id="s1-s2-s2-t1" name="Valid Login" line="9">
+<kw name="Open Browser To Application" owner="ui_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T09:51:05.951151" level="INFO">Opening browser 'chrome' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
+<msg time="2026-04-02T09:51:06.093122" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-02T09:51:06.093282" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x55f2770c1252 &lt;unknown&gt;
+#1 0x55f276a91226 &lt;unknown&gt;
+#2 0x55f276ace100 &lt;unknown&gt;
+#3 0x55f276ac7fb3 &lt;unknown&gt;
+#4 0x55f276b1766c &lt;unknown&gt;
+#5 0x55f276b16dbd &lt;unknown&gt;
+#6 0x55f276b07fa7 &lt;unknown&gt;
+#7 0x55f276ad5de2 &lt;unknown&gt;
+#8 0x55f276ad6c55 &lt;unknown&gt;
+#9 0x55f277084ee4 &lt;unknown&gt;
+#10 0x55f277088236 &lt;unknown&gt;
+#11 0x55f277087cee &lt;unknown&gt;
+#12 0x55f2770886a9 &lt;unknown&gt;
+#13 0x55f2770746ea &lt;unknown&gt;
+#14 0x55f277088a2a &lt;unknown&gt;
+#15 0x55f27705d359 &lt;unknown&gt;
+#16 0x55f2770adf79 &lt;unknown&gt;
+#17 0x55f2770ae16d &lt;unknown&gt;
+#18 0x55f2770bfc8e &lt;unknown&gt;
+#19 0x7fa262180b7b &lt;unknown&gt;
+</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-04-02T09:51:05.950940" elapsed="0.143164">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x55f2770c1252 &lt;unknown&gt;
+#1 0x55f276a91226 &lt;unknown&gt;
+#2 0x55f276ace100 &lt;unknown&gt;
+#3 0x55f276ac7fb3 &lt;unknown&gt;
+#4 0x55f276b1766c &lt;unknown&gt;
+#5 0x55f276b16dbd &lt;unknown&gt;
+#6 0x55f276b07fa7 &lt;unknown&gt;
+#7 0x55f276ad5de2 &lt;unknown&gt;
+#8 0x55f276ad6c55 &lt;unknown&gt;
+#9 0x55f277084ee4 &lt;unknown&gt;
+#10 0x55f277088236 &lt;unknown&gt;
+#11 0x55f277087cee &lt;unknown&gt;
+#12 0x55f2770886a9 &lt;unknown&gt;
+#13 0x55f2770746ea &lt;unknown&gt;
+#14 0x55f277088a2a &lt;unknown&gt;
+#15 0x55f27705d359 &lt;unknown&gt;
+#16 0x55f2770adf79 &lt;unknown&gt;
+#17 0x55f2770ae16d &lt;unknown&gt;
+#18 0x55f2770bfc8e &lt;unknown&gt;
+#19 0x7fa262180b7b &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2026-04-02T09:51:06.094299" elapsed="0.000036"/>
+</kw>
+<status status="FAIL" start="2026-04-02T09:51:05.949824" elapsed="0.144628">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x55f2770c1252 &lt;unknown&gt;
+#1 0x55f276a91226 &lt;unknown&gt;
+#2 0x55f276ace100 &lt;unknown&gt;
+#3 0x55f276ac7fb3 &lt;unknown&gt;
+#4 0x55f276b1766c &lt;unknown&gt;
+#5 0x55f276b16dbd &lt;unknown&gt;
+#6 0x55f276b07fa7 &lt;unknown&gt;
+#7 0x55f276ad5de2 &lt;unknown&gt;
+#8 0x55f276ad6c55 &lt;unknown&gt;
+#9 0x55f277084ee4 &lt;unknown&gt;
+#10 0x55f277088236 &lt;unknown&gt;
+#11 0x55f277087cee &lt;unknown&gt;
+#12 0x55f2770886a9 &lt;unknown&gt;
+#13 0x55f2770746ea &lt;unknown&gt;
+#14 0x55f277088a2a &lt;unknown&gt;
+#15 0x55f27705d359 &lt;unknown&gt;
+#16 0x55f2770adf79 &lt;unknown&gt;
+#17 0x55f2770ae16d &lt;unknown&gt;
+#18 0x55f2770bfc8e &lt;unknown&gt;
+#19 0x7fa262180b7b &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Login With Credentials" owner="ui_keywords">
+<arg>${VALID_USER}</arg>
+<arg>${VALID_PASS}</arg>
+<status status="NOT RUN" start="2026-04-02T09:51:06.094636" elapsed="0.000032"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Employee Management</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-04-02T09:51:06.094792" elapsed="0.000030"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-04-02T09:51:06.094916" elapsed="0.000023"/>
+</kw>
+<status status="FAIL" start="2026-04-02T09:51:05.949373" elapsed="0.145721">SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x55f2770c1252 &lt;unknown&gt;
+#1 0x55f276a91226 &lt;unknown&gt;
+#2 0x55f276ace100 &lt;unknown&gt;
+#3 0x55f276ac7fb3 &lt;unknown&gt;
+#4 0x55f276b1766c &lt;unknown&gt;
+#5 0x55f276b16dbd &lt;unknown&gt;
+#6 0x55f276b07fa7 &lt;unknown&gt;
+#7 0x55f276ad5de2 &lt;unknown&gt;
+#8 0x55f276ad6c55 &lt;unknown&gt;
+#9 0x55f277084ee4 &lt;unknown&gt;
+#10 0x55f277088236 &lt;unknown&gt;
+#11 0x55f277087cee &lt;unknown&gt;
+#12 0x55f2770886a9 &lt;unknown&gt;
+#13 0x55f2770746ea &lt;unknown&gt;
+#14 0x55f277088a2a &lt;unknown&gt;
+#15 0x55f27705d359 &lt;unknown&gt;
+#16 0x55f2770adf79 &lt;unknown&gt;
+#17 0x55f2770ae16d &lt;unknown&gt;
+#18 0x55f2770bfc8e &lt;unknown&gt;
+#19 0x7fa262180b7b &lt;unknown&gt;
+</status>
+</test>
+<status status="FAIL" start="2026-04-02T09:51:05.946460" elapsed="0.148976"/>
+</suite>
+<status status="FAIL" start="2026-04-02T09:51:05.468823" elapsed="0.627324"/>
+</suite>
+<status status="FAIL" start="2026-04-02T09:51:04.164254" elapsed="1.932399"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Api" id="s1" pass="2" fail="0" skip="0">Api</stat>
-<stat name="User Api Tests" id="s1-s1" pass="2" fail="0" skip="0">Api.User Api Tests</stat>
+<stat name="Tests" id="s1" pass="2" fail="2" skip="0">Tests</stat>
+<stat name="Api" id="s1-s1" pass="2" fail="0" skip="0">Tests.Api</stat>
+<stat name="User Api Tests" id="s1-s1-s1" pass="2" fail="0" skip="0">Tests.Api.User Api Tests</stat>
+<stat name="Ui" id="s1-s2" pass="0" fail="2" skip="0">Tests.Ui</stat>
+<stat name="Dashboard Tests" id="s1-s2-s1" pass="0" fail="1" skip="0">Tests.Ui.Dashboard Tests</stat>
+<stat name="Login Tests" id="s1-s2-s2" pass="0" fail="1" skip="0">Tests.Ui.Login Tests</stat>
 </suite>
 </statistics>
 <errors>
