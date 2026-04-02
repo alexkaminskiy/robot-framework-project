@@ -44,7 +44,8 @@ jobs:
   # Prepare Robot Framework report for GitHub Pages
     - name: Prepare Robot Report for GitHub Pages
       run: |
-          ls -la reports
+          ls reports
+          ls tests
           cp tests/report.html tests/index.html
 
     - name: Deploy Robot Framework Report to GitHub Pages
