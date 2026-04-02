@@ -1,143 +1,237 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T10:57:59.211125" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.12.13 on linux)" generated="2026-04-02T11:13:16.819239" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/tests/tests">
 <suite id="s1-s1" name="Api" source="/tests/tests/api">
 <suite id="s1-s1-s1" name="User Api Tests" source="/tests/tests/api/user_api_tests.robot">
 <test id="s1-s1-s1-t1" name="Login API" line="8">
 <kw name="API Login" owner="api_keywords">
 <kw name="Login" owner="CustomAPI">
-<msg time="2026-04-02T10:58:00.361171" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzQ2ODAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.rIpcq-YAta5HumLGopGsyVkqHyfxUm1ALIijmmQx...</msg>
+<msg time="2026-04-02T11:13:17.554094" level="INFO">${result} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzU1OTcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.UbZ-Ug_Qln53RulmySldqWXvdw3Oht1UyEnE0jnM...</msg>
 <var>${result}</var>
 <arg>${user}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-04-02T10:57:59.606794" elapsed="0.754438"/>
+<status status="PASS" start="2026-04-02T11:13:17.204048" elapsed="0.350108"/>
 </kw>
 <return>
 <value>${result}</value>
-<status status="PASS" start="2026-04-02T10:58:00.361327" elapsed="0.000061"/>
+<status status="PASS" start="2026-04-02T11:13:17.554246" elapsed="0.000116"/>
 </return>
-<msg time="2026-04-02T10:58:00.361554" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzQ2ODAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.rIpcq-YAta5HumLGopGsyVkqHyfxUm1ALIijmmQx...</msg>
+<msg time="2026-04-02T11:13:17.554529" level="INFO">${token} = ({'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzU1OTcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.UbZ-Ug_Qln53RulmySldqWXvdw3Oht1UyEnE0jnM...</msg>
 <var>${token}</var>
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="PASS" start="2026-04-02T10:57:59.606123" elapsed="0.755455"/>
+<status status="PASS" start="2026-04-02T11:13:17.203333" elapsed="0.351221"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T10:58:00.362169" level="INFO">Length is 2.</msg>
+<msg time="2026-04-02T11:13:17.555188" level="INFO">Length is 2.</msg>
 <arg>${token}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T10:58:00.361701" elapsed="0.000508"/>
+<status status="PASS" start="2026-04-02T11:13:17.554695" elapsed="0.000534"/>
 </kw>
-<status status="PASS" start="2026-04-02T10:57:59.605336" elapsed="0.756975"/>
+<status status="PASS" start="2026-04-02T11:13:17.202466" elapsed="0.352902"/>
 </test>
 <test id="s1-s1-s1-t2" name="Get Authenticate List" line="12">
 <kw name="API Get Auth" owner="api_keywords">
 <kw name="Get Auth" owner="CustomAPI">
-<msg time="2026-04-02T10:58:00.723095" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzQ2ODAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.rIpcq-YAta5HumLGopGsyVkqHyfxUm1ALIijmmQxPOg']</msg>
+<msg time="2026-04-02T11:13:17.902114" level="INFO">${result} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzU1OTcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.UbZ-Ug_Qln53RulmySldqWXvdw3Oht1UyEnE0jnMKWY']</msg>
 <var>${result}</var>
-<status status="PASS" start="2026-04-02T10:58:00.363167" elapsed="0.359974"/>
+<status status="PASS" start="2026-04-02T11:13:17.556368" elapsed="0.345796"/>
 </kw>
 <return>
 <value>${result}</value>
-<status status="PASS" start="2026-04-02T10:58:00.723213" elapsed="0.000056"/>
+<status status="PASS" start="2026-04-02T11:13:17.902235" elapsed="0.000086"/>
 </return>
-<msg time="2026-04-02T10:58:00.723420" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzQ2ODAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.rIpcq-YAta5HumLGopGsyVkqHyfxUm1ALIijmmQxPOg']</msg>
+<msg time="2026-04-02T11:13:17.902478" level="INFO">${list} = ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxMzU1OTcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzcxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNzEifQ.UbZ-Ug_Qln53RulmySldqWXvdw3Oht1UyEnE0jnMKWY']</msg>
 <var>${list}</var>
-<status status="PASS" start="2026-04-02T10:58:00.362947" elapsed="0.360497"/>
+<status status="PASS" start="2026-04-02T11:13:17.556140" elapsed="0.346360"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-04-02T10:58:00.723907" level="INFO">Length is 1.</msg>
+<msg time="2026-04-02T11:13:17.902931" level="INFO">Length is 1.</msg>
 <arg>${list}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-04-02T10:58:00.723565" elapsed="0.000384"/>
+<status status="PASS" start="2026-04-02T11:13:17.902615" elapsed="0.000353"/>
 </kw>
-<status status="PASS" start="2026-04-02T10:58:00.362508" elapsed="0.361568"/>
+<status status="PASS" start="2026-04-02T11:13:17.555635" elapsed="0.347437"/>
 </test>
-<status status="PASS" start="2026-04-02T10:57:59.261773" elapsed="1.462729"/>
+<status status="PASS" start="2026-04-02T11:13:16.874785" elapsed="1.028790"/>
 </suite>
-<status status="PASS" start="2026-04-02T10:57:59.260848" elapsed="1.464279"/>
+<status status="PASS" start="2026-04-02T11:13:16.873739" elapsed="1.030399"/>
 </suite>
 <suite id="s1-s2" name="Ui" source="/tests/tests/ui">
 <suite id="s1-s2-s1" name="Dashboard Tests" source="/tests/tests/ui/dashboard_tests.robot">
 <test id="s1-s2-s1-t1" name="Open Dashboard" line="9">
 <kw name="Open Browser To Application" owner="ui_keywords">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-02T11:13:18.158018" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f25a9f8b260&gt;</msg>
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-02T11:13:18.155172" elapsed="0.002884"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<msg time="2026-04-02T11:13:18.158560" level="FAIL">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</msg>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless=new</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="FAIL" start="2026-04-02T11:13:18.158188" elapsed="0.000541">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T11:13:18.158854" elapsed="0.000027"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T11:13:18.158970" elapsed="0.000023"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T11:13:18.159075" elapsed="0.000022"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-software-rasterizer</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T11:13:18.159175" elapsed="0.000021"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--window-size=1920,1080</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T11:13:18.159297" elapsed="0.000026"/>
+</kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-02T10:58:00.953127" level="INFO">Opening browser 'chrome' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
-<msg time="2026-04-02T10:58:00.955370" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-04-02T10:58:00.955492" level="FAIL">ValueError: Unable to parse option: "add_argument=--headless=new"</msg>
 <arg>${LOGIN_URL}</arg>
 <arg>chrome</arg>
-<arg>options=add_argument=--headless=new;add_argument=--no-sandbox;add_argument=--disable-dev-shm-usage;add_argument=--disable-gpu;add_argument=--window-size=1920,1080</arg>
+<arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2026-04-02T10:58:00.952871" elapsed="0.003891">ValueError: Unable to parse option: "add_argument=--headless=new"</status>
+<status status="NOT RUN" start="2026-04-02T11:13:18.159431" elapsed="0.000023"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-04-02T10:58:00.956927" elapsed="0.000031"/>
+<status status="NOT RUN" start="2026-04-02T11:13:18.159537" elapsed="0.000021"/>
 </kw>
-<doc>Opens Chrome in Docker/GitHub CI with correct headless flags.</doc>
-<status status="FAIL" start="2026-04-02T10:58:00.952389" elapsed="0.004694">ValueError: Unable to parse option: "add_argument=--headless=new"</status>
+<status status="FAIL" start="2026-04-02T11:13:18.154680" elapsed="0.004982">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
 </kw>
 <kw name="Login With Credentials" owner="ui_keywords">
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="NOT RUN" start="2026-04-02T10:58:00.957230" elapsed="0.000028"/>
+<status status="NOT RUN" start="2026-04-02T11:13:18.159815" elapsed="0.000030"/>
 </kw>
 <kw name="Open Dashboard" owner="DashboardPage">
-<status status="NOT RUN" start="2026-04-02T10:58:00.957361" elapsed="0.000022"/>
+<status status="NOT RUN" start="2026-04-02T11:13:18.159955" elapsed="0.000025"/>
 </kw>
 <kw name="Dashboard Should Be Visible" owner="DashboardPage">
-<status status="NOT RUN" start="2026-04-02T10:58:00.957467" elapsed="0.000021"/>
+<status status="NOT RUN" start="2026-04-02T11:13:18.160075" elapsed="0.000024"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2026-04-02T10:58:00.957556" elapsed="0.000020"/>
+<status status="NOT RUN" start="2026-04-02T11:13:18.160174" elapsed="0.000022"/>
 </kw>
-<status status="FAIL" start="2026-04-02T10:58:00.951880" elapsed="0.005813">ValueError: Unable to parse option: "add_argument=--headless=new"</status>
+<status status="FAIL" start="2026-04-02T11:13:18.154080" elapsed="0.006274">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
 </test>
-<status status="FAIL" start="2026-04-02T10:58:00.726484" elapsed="0.231518"/>
+<status status="FAIL" start="2026-04-02T11:13:17.905697" elapsed="0.255000"/>
 </suite>
 <suite id="s1-s2-s2" name="Login Tests" source="/tests/tests/ui/login_tests.robot">
 <test id="s1-s2-s2-t1" name="Valid Login" line="9">
 <kw name="Open Browser To Application" owner="ui_keywords">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-02T11:13:18.165176" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f25a9e114f0&gt;</msg>
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-02T11:13:18.164838" elapsed="0.000368"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<msg time="2026-04-02T11:13:18.165708" level="FAIL">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</msg>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless=new</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="FAIL" start="2026-04-02T11:13:18.165402" elapsed="0.000403">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T11:13:18.165914" elapsed="0.000025"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T11:13:18.166026" elapsed="0.000023"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T11:13:18.166147" elapsed="0.000024"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-software-rasterizer</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T11:13:18.166255" elapsed="0.000078"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--window-size=1920,1080</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-02T11:13:18.166462" elapsed="0.000033"/>
+</kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-02T10:58:00.962182" level="INFO">Opening browser 'chrome' to base url 'http://eaapp.somee.com/Account/Login'.</msg>
-<msg time="2026-04-02T10:58:00.962304" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-04-02T10:58:00.962378" level="FAIL">ValueError: Unable to parse option: "add_argument=--headless=new"</msg>
 <arg>${LOGIN_URL}</arg>
 <arg>chrome</arg>
-<arg>options=add_argument=--headless=new;add_argument=--no-sandbox;add_argument=--disable-dev-shm-usage;add_argument=--disable-gpu;add_argument=--window-size=1920,1080</arg>
+<arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2026-04-02T10:58:00.961970" elapsed="0.000965">ValueError: Unable to parse option: "add_argument=--headless=new"</status>
+<status status="NOT RUN" start="2026-04-02T11:13:18.166626" elapsed="0.000041"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-04-02T10:58:00.963086" elapsed="0.000028"/>
+<status status="NOT RUN" start="2026-04-02T11:13:18.166793" elapsed="0.000032"/>
 </kw>
-<doc>Opens Chrome in Docker/GitHub CI with correct headless flags.</doc>
-<status status="FAIL" start="2026-04-02T10:58:00.961754" elapsed="0.001447">ValueError: Unable to parse option: "add_argument=--headless=new"</status>
+<status status="FAIL" start="2026-04-02T11:13:18.164630" elapsed="0.002312">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
 </kw>
 <kw name="Login With Credentials" owner="ui_keywords">
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="NOT RUN" start="2026-04-02T10:58:00.963331" elapsed="0.000024"/>
+<status status="NOT RUN" start="2026-04-02T11:13:18.167083" elapsed="0.000027"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
 <arg>Employee Management</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-04-02T10:58:00.963433" elapsed="0.000020"/>
+<status status="NOT RUN" start="2026-04-02T11:13:18.167195" elapsed="0.000023"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2026-04-02T10:58:00.963521" elapsed="0.000018"/>
+<status status="NOT RUN" start="2026-04-02T11:13:18.167321" elapsed="0.000024"/>
 </kw>
-<status status="FAIL" start="2026-04-02T10:58:00.961345" elapsed="0.002302">ValueError: Unable to parse option: "add_argument=--headless=new"</status>
+<status status="FAIL" start="2026-04-02T11:13:18.164165" elapsed="0.003297">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--headless'</status>
 </test>
-<status status="FAIL" start="2026-04-02T10:58:00.958583" elapsed="0.005325"/>
+<status status="FAIL" start="2026-04-02T11:13:18.161362" elapsed="0.006413"/>
 </suite>
-<status status="FAIL" start="2026-04-02T10:58:00.725499" elapsed="0.238921"/>
+<status status="FAIL" start="2026-04-02T11:13:17.904663" elapsed="0.263737"/>
 </suite>
-<status status="FAIL" start="2026-04-02T10:57:59.212346" elapsed="1.752416"/>
+<status status="FAIL" start="2026-04-02T11:13:16.820589" elapsed="1.348361"/>
 </suite>
 <statistics>
 <total>
