@@ -5,6 +5,7 @@ Resource    ../../resources/Keywords/ui_keywords.robot
 Resource    ../../resources/Pages/DashboardPage.robot
 Library     SeleniumLibrary
 
+
 *** Test Cases ***
 Open Dashboard
     Open Browser To Application
