@@ -21,16 +21,11 @@ jobs:
       uses: docker/setup-buildx-action@v2
 
     - name: Build test image
-      run: docker buildx build --load -t api-tests .
- 
-    - name: List Docker images (debug)
-      run: | 
-        docker image ls
-        docker ps -a
-
-    - name: Create reports directory
-      run: mkdir -p reports
-
+      run: |
+          docker buildx build --load -t api-tests .
+          docker image ls
+          docker ps -a
+        
     - name: Run tests in Docker
       continue-on-error: true
       env:
@@ -38,17 +33,16 @@ jobs:
         AUTH_USER: ${{ secrets.AUTH_USER }}
         AUTH_PASSWORD: ${{ secrets.AUTH_PASSWORD }}
       run: |
-        docker run --name api-tests-container \
+        mkdir -p reports
+        docker run --shm-size=2g  --name api-tests-container \
           -e BASE_URL="$BASE_URL" \
           -e AUTH_USER="$AUTH_USER" \
           -e AUTH_PASSWORD="$AUTH_PASSWORD" \
           -v ${{ github.workspace }}/reports:/tests/reports \
           api-tests ./run.sh
+        cp reports/report.html reports/index.html   # Prepare Robot Framework report for GitHub Pages
 
-  # Prepare Robot Framework report for GitHub Pages
-    - name: Prepare Robot Report for GitHub Pages
-      run: |
-          cp reports/report.html reports/index.html
+          
 
     - name: Deploy Robot Framework Report to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
@@ -60,7 +54,7 @@ jobs:
       if: always()   
       run: |
           MESSAGE="RobotFramework Tests Run Completed. \nReport:
-             https://alexkaminskiy.github.io/api-automation-tests"
+             https://alexkaminskiy.github.io/robot-framework-project"
 
               curl -H "Content-Type: application/json" \
                   -d "{\"text\": \"${MESSAGE}\"}" \
