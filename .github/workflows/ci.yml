@@ -28,7 +28,9 @@ jobs:
         docker image ls
         docker ps -a
 
-   
+    - name: Create reports directory
+      run: mkdir -p reports
+
     - name: Run tests in Docker
       continue-on-error: true
       env:
@@ -46,7 +48,7 @@ jobs:
   # Prepare Robot Framework report for GitHub Pages
     - name: Prepare Robot Report for GitHub Pages
       run: |
-          cp /reports/report.html /reports/index.html
+          cp reports/report.html reports/index.html
 
     - name: Deploy Robot Framework Report to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
