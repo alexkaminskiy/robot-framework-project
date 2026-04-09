@@ -1,8 +1,11 @@
 __pycache__/
 *.pyc
 .robotcache/
-poetry.lock
+# poetry.lock
 .idea/
 .vscode/
 drivers/
 .venv/
+report.html
+output.xml
+log.html

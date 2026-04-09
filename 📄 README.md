@@ -1,17 +1,19 @@
-# Robot Framework Automation Project
+# 🌐 **Robot Framework Automation Project**
 
-This repository contains a complete Robot Framework automation framework including:
+A complete, production‑ready Robot Framework test automation project featuring:
 
-- UI tests (SeleniumLibrary)
-- API tests (Custom Python library using Requests)
-- Page Object Model structure
-- Keywords modules
-- Poetry-based dependency management
-- Ready-to-run examples
+- 🚀 UI tests (SeleniumLibrary)
+- 🔌 API tests (custom Python library using Requests)
+- 🧩 Page Object Model
+- 🔁 Reusable Keywords
+- 📦 Poetry‑based dependency management
+- 🧪 Ready‑to‑run examples
 
 ---
 
-## 📦 Project Structure:
+# 📁 **Project Structure**
+
+```
 robot-framework-project/
 │
 ├── tests/
@@ -26,65 +28,114 @@ robot-framework-project/
 ├── drivers/
 ├── pyproject.toml
 └── README.md
+```
 
 ---
 
-## 🚀 1. Installation
+# 🛠️ **1. Installation**
 
-### 1.1 Install Python
+## ✅ 1.1 Install Python
 
 Ensure Python **3.8+** is installed:
 
 ```sh
 python --version
+```
 
-Robot Framework requires Python 3.8 or newer.
-(Official installation guide)
- [github.com]
+Robot Framework requires **Python 3.8 or newer**.
 
-🚀 2. Using Poetry (recommended)
-Poetry manages dependencies and virtual environments automatically.
-Install Poetry:
+---
+
+## 🔹 1.2 Create & Activate Virtual Environment (Recommended)
+
+### Create venv:
+
+```sh
+python -m venv .venv
+```
+
+### Activate venv:
+
+**Windows (CMD):**
+```cmd
+.venv\Scripts\activate
+```
+
+**Windows PowerShell:**
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+**Linux / macOS / Git Bash:**
+```bash
+source .venv/bin/activate
+```
+
+---
+
+# 📦 **2. Using Poetry (Recommended)**
+
+Poetry manages dependencies, virtual environments, version locking, and reproducible builds.
+
+### ▶ Install Poetry
+
+```bash
 curl -sSL https://install.python-poetry.org | python3 -
+```
 
-(Recommended in RoboCon 2022 for Robot Framework dependency management)
+### ▶ Configure Poetry to use a `.venv` inside the project
 
-Configure Poetry to place venv inside project:
+```bash
 poetry config virtualenvs.in-project true
-(Best practice used in robotframework-poetry-demo)
- [github.com]
- Install dependencies:
- poetry install
+```
+
+### ▶ Install project dependencies
+
+```bash
+poetry install
+```
 
 This installs:
 
-robotframework
-robotframework-seleniumlibrary
-requests
-pyyaml
+- `robotframework`  
+- `robotframework-seleniumlibrary`  
+- `requests`  
+- `pyyaml`  
 
-Dependency management rules are defined in Poety’s documentation.
- [python-poetry.org]
+---
 
-🚀 3. Running Tests
+# ▶️ **3. Running Tests**
 
-UI Tests
+## 🔵 Run UI tests
 ```bash
 poetry run robot tests/ui/
 ```
 
-API TEST
+## 🟢 Run API tests
 ```bash
 poetry run robot tests/api/
 ```
 
-🔧 4. Browser Drivers
-Selenium 4+ normally auto-downloads drivers using Selenium Manager,
-but if needed, place chromedriver/geckodriver into drivers/.
-(Driver automation explained in Selenium docs and reflected in tutorials)
- [qafeast.com]
+---
 
-🗂 5. Configuration
-Edit credentials / URLs in:
+# 🔧 **4. Browser Drivers**
+
+Selenium 4+ uses **Selenium Manager**, which usually auto‑installs browser drivers.  
+If needed, you can manually place `chromedriver` or `geckodriver` into:
+
+```
+drivers/
+```
+
+---
+
+# ⚙️ **5. Configuration**
+
+Edit environment settings and credentials in:
+
+```
 resources/variables.robot
 resources/config.yaml
+```
+
+---

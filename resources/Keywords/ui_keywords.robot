@@ -1,12 +1,15 @@
 
 *** Settings ***
 Library    SeleniumLibrary
+Library    ../../libraries/browser_options.py
 Resource   ../Pages/LoginPage.robot
 
 *** Keywords ***
+
 Open Browser To Application
-    Open Browser    ${BASE_URL}    ${BROWSER}
-    Maximize Browser Window
+    ${options}=    Chrome Ci Options
+    Open Browser    ${LOGIN_URL}    chrome    options=${options}
+    # Maximize Browser Window
 
 Login With Credentials
     [Arguments]    ${user}    ${pass}

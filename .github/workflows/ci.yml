@@ -1,0 +1,66 @@
+name: CI
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  robot-automation-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+
+    - name: Build test image
+      run: |
+          docker buildx build --load -t api-tests .
+          docker image ls
+          docker ps -a
+        
+    - name: Run tests in Docker
+      continue-on-error: true
+      env:
+        BASE_URL: ${{ vars.BASE_URL }}
+        AUTH_USER: ${{ secrets.AUTH_USER }}
+        AUTH_PASSWORD: ${{ secrets.AUTH_PASSWORD }}
+      run: |
+        mkdir -p reports
+        docker run --shm-size=2g  --name api-tests-container \
+          -e BASE_URL="$BASE_URL" \
+          -e AUTH_USER="$AUTH_USER" \
+          -e AUTH_PASSWORD="$AUTH_PASSWORD" \
+          -v ${{ github.workspace }}/reports:/tests/reports \
+          api-tests ./run.sh
+        cp reports/report.html reports/index.html   # Prepare Robot Framework report for GitHub Pages
+
+          
+
+    - name: Deploy Robot Framework Report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: reports
+
+    - name: Send Teams Notification
+      if: always()   
+      run: |
+          MESSAGE="RobotFramework Tests Run Completed. \nReport:
+             https://alexkaminskiy.github.io/robot-framework-project"
+
+              curl -H "Content-Type: application/json" \
+                  -d "{\"text\": \"${MESSAGE}\"}" \
+                  ${{ secrets.TEAMS_WEBHOOK_URL }}
+    
+    - name: Cleanup
+      run: |
+        docker rm -f api-tests-container || true
+        docker rmi -f api-tests || true
